@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>userPage</class>
+ <widget class="QMainWindow" name="userPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>975</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="toolbar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>60</width>
+      <height>975</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(246, 246, 246);</string>
+    </property>
+    <widget class="QToolButton" name="user_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>45</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>1</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/user_on.png</normaloff>:/icon/user_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>300</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>100</number>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="todo_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>125</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/todo_off.png</normaloff>:/icon/todo_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="calendar_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>205</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/calendar_off .png</normaloff>:/icon/calendar_off .png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="count_down_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>285</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/count_down_off.png</normaloff>:/icon/count_down_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="dustbin_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>365</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/dustbin_off.png</normaloff>:/icon/dustbin_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="search_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>442</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/search_off.png</normaloff>:/icon/search_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="log_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>522</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/log_off.png</normaloff>:/icon/log_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="setting_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>602</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/setting_off.png</normaloff>:/icon/setting_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>todo_button</zorder>
+    <zorder>calendar_button</zorder>
+    <zorder>count_down_button</zorder>
+    <zorder>dustbin_button</zorder>
+    <zorder>search_button</zorder>
+    <zorder>log_button</zorder>
+    <zorder>setting_button</zorder>
+    <zorder>user_button</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

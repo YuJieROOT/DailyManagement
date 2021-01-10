@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>todoPage</class>
+ <widget class="QMainWindow" name="todoPage">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -34,7 +34,7 @@
     <property name="styleSheet">
      <string notr="true">background-color: rgb(246, 246, 246);</string>
     </property>
-    <widget class="QToolButton" name="user_off">
+    <widget class="QToolButton" name="user_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -64,11 +64,20 @@
      <property name="checkable">
       <bool>false</bool>
      </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>300</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>100</number>
+     </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="todo_off">
+    <widget class="QToolButton" name="todo_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -82,7 +91,7 @@
      </property>
      <property name="icon">
       <iconset resource="icon.qrc">
-       <normaloff>:/icon/todo_off.png</normaloff>:/icon/todo_off.png</iconset>
+       <normaloff>:/icon/todo_on.png</normaloff>:/icon/todo_on.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -91,10 +100,10 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="calendar_off">
+    <widget class="QToolButton" name="calendar_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -117,10 +126,10 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="count_down_off">
+    <widget class="QToolButton" name="count_down_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -143,10 +152,10 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="dustbin_off">
+    <widget class="QToolButton" name="dustbin_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -169,10 +178,10 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="search_off">
+    <widget class="QToolButton" name="search_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -195,10 +204,10 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="log_off">
+    <widget class="QToolButton" name="log_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -221,10 +230,10 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
-    <widget class="QToolButton" name="setting_off">
+    <widget class="QToolButton" name="setting_button">
      <property name="geometry">
       <rect>
        <x>6</x>
@@ -247,9 +256,17 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
     </widget>
+    <zorder>todo_button</zorder>
+    <zorder>calendar_button</zorder>
+    <zorder>count_down_button</zorder>
+    <zorder>dustbin_button</zorder>
+    <zorder>search_button</zorder>
+    <zorder>log_button</zorder>
+    <zorder>setting_button</zorder>
+    <zorder>user_button</zorder>
    </widget>
    <widget class="QWidget" name="widget_2" native="true">
     <property name="geometry">
@@ -727,7 +744,8 @@ border-color: rgb(237, 238, 238);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 15pt &quot;微软雅黑&quot;;</string>
+       <string notr="true">font: 15pt &quot;微软雅黑&quot;;
+</string>
       </property>
       <property name="text">
        <string>家庭</string>
