@@ -727,7 +727,7 @@ border-color: rgb(237, 238, 238);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 15pt &quot;微软雅黑&quot;;</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>家庭</string>
