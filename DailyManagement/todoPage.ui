@@ -870,7 +870,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
      <number>0</number>
     </property>
     <property name="widgetResizable">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <widget class="QWidget" name="todo_scrollAreaWidgetContents">
      <property name="geometry">
@@ -878,7 +878,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
        <x>0</x>
        <y>0</y>
        <width>855</width>
-       <height>820</height>
+       <height>1000</height>
       </rect>
      </property>
      <widget class="QWidget" name="todo_bar" native="true">
@@ -1336,6 +1336,34 @@ font-weight:bold</string>
        </property>
        <property name="autoRaise">
         <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="subtask_lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>270</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>添加一个子任务</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
        </property>
       </widget>
      </widget>

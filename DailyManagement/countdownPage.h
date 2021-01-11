@@ -23,6 +23,22 @@ public:
     explicit countDownPage(QWidget *parent = nullptr);
     ~countDownPage();
 
+
+private slots:
+    void on_user_button_clicked();
+
+    void on_todo_button_clicked();
+
+    void on_calendar_button_clicked();
+
+    void on_dustbin_button_clicked();
+
+    void on_search_button_clicked();
+
+    void on_log_button_clicked();
+
+    void on_setting_button_clicked();
+
 private:
     Ui::countDownPage *ui;
 };
