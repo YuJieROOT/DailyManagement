@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>todoPage</class>
+ <widget class="QMainWindow" name="todoPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>973</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QWidget" name="toolbar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>60</width>
+      <height>975</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(246, 246, 246);</string>
+    </property>
+    <widget class="QToolButton" name="user_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>45</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>1</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/user_off.png</normaloff>:/icon/user_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>300</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>100</number>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="todo_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>125</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/todo_on.png</normaloff>:/icon/todo_on.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="calendar_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>205</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/calendar_off .png</normaloff>:/icon/calendar_off .png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="count_down_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>285</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/count_down_off.png</normaloff>:/icon/count_down_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="dustbin_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>365</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/dustbin_off.png</normaloff>:/icon/dustbin_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="search_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>442</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/search_off.png</normaloff>:/icon/search_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="log_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>522</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/log_off.png</normaloff>:/icon/log_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="setting_button">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>602</y>
+       <width>45</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/icon/setting_off.png</normaloff>:/icon/setting_off.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>todo_button</zorder>
+    <zorder>calendar_button</zorder>
+    <zorder>count_down_button</zorder>
+    <zorder>dustbin_button</zorder>
+    <zorder>search_button</zorder>
+    <zorder>log_button</zorder>
+    <zorder>setting_button</zorder>
+    <zorder>user_button</zorder>
+   </widget>
+   <widget class="QWidget" name="inboxAndworkplace" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>300</width>
+      <height>975</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="inbox" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>300</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="inbox_in" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>300</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <widget class="QToolButton" name="inbox_button">
+       <property name="geometry">
+        <rect>
+         <x>35</x>
+         <y>14</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/inbox_off.png</normaloff>:/icon/inbox_off.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="inbox_text">
+       <property name="geometry">
+        <rect>
+         <x>94</x>
+         <y>9</y>
+         <width>75</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>草稿箱</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="drafts_num">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>22</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(163, 163, 163);</string>
+       </property>
+       <property name="text">
+        <string>18</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Line" name="inbox_line">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>68</y>
+        <width>280</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="working_place_family" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>300</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(246, 246, 246, 125);
+border-radius:10px</string>
+     </property>
+     <widget class="QWidget" name="working_place_family_in" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>300</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <widget class="QToolButton" name="working_place_family_icon">
+       <property name="geometry">
+        <rect>
+         <x>35</x>
+         <y>14</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/working_table.png</normaloff>:/icon/working_table.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="working_place_family_text">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>17</y>
+         <width>50</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>家庭</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="working_place_family_rightarrow">
+       <property name="geometry">
+        <rect>
+         <x>246</x>
+         <y>17</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/right_arrow.png</normaloff>:/icon/right_arrow.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Line" name="working_place_family_line">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>68</y>
+        <width>280</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="working_place_work" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>140</y>
+       <width>300</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="working_place_work_in" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>300</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <widget class="QToolButton" name="working_place_work_icon">
+       <property name="geometry">
+        <rect>
+         <x>35</x>
+         <y>14</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/working_table.png</normaloff>:/icon/working_table.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="working_place_work_text">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>17</y>
+         <width>50</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>工作</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="working_place_work_rightarrow">
+       <property name="geometry">
+        <rect>
+         <x>246</x>
+         <y>17</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/right_arrow.png</normaloff>:/icon/right_arrow.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Line" name="working_place_work_line">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>68</y>
+        <width>280</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="new_workplace" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>930</y>
+       <width>125</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <widget class="QToolButton" name="new_workplace_button">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icon.qrc">
+        <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="new_workplace_text">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>15</y>
+        <width>70</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;微软雅黑&quot;;
+color: rgb(163, 163, 163);</string>
+      </property>
+      <property name="text">
+       <string>新建工作区</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_1">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>2</width>
+      <height>975</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(237, 238, 238);
+border-color: rgb(237, 238, 238);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="new_todo" native="true">
+    <property name="geometry">
+     <rect>
+      <x>362</x>
+      <y>0</y>
+      <width>856</width>
+      <height>153</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="new_todo_bar" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>816</width>
+       <height>45</height>
+      </rect>
+     </property>
+     <widget class="QToolButton" name="new_todo_pushbutton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>7</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icon.qrc">
+        <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="new_todo_workPlace_family">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>101</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;微软雅黑&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>家庭</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="new_todo_more">
+      <property name="geometry">
+       <rect>
+        <x>766</x>
+        <y>7</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icon.qrc">
+        <normaloff>:/icon/more_off.png</normaloff>:/icon/more_off.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="new_todo_text" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>85</y>
+       <width>800</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(243, 244, 247);
+border-radius:10px;</string>
+     </property>
+     <widget class="QPlainTextEdit" name="new_todo_plainTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>4</y>
+        <width>780</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(192, 193, 197);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="plainText">
+       <string>新建一个待办事项</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>1216</x>
+      <y>0</y>
+      <width>2</width>
+      <height>975</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(237, 238, 238);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>362</x>
+      <y>153</y>
+      <width>856</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(237, 238, 238);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="todo_scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>361</x>
+      <y>155</y>
+      <width>855</width>
+      <height>820</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="todo_scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>855</width>
+       <height>820</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="todo_bar" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>835</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(208, 233, 252, 125);
+border-radius:10px</string>
+      </property>
+      <widget class="QToolButton" name="todo_bar_pushbutton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>23</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="todo_bar_pane_off">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>9</y>
+         <width>42</width>
+         <height>42</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="todo_bar_plainTextEdit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>610</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 13pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="plainText">
+        <string>ui设计</string>
+       </property>
+      </widget>
+      <widget class="Line" name="todo_bar_line">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>50</y>
+         <width>740</width>
+         <height>2</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="todo_bar_date">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>20</y>
+         <width>68</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(163, 163, 163);
+background-color: rgba(255, 255, 255, 0);
+font: 10pt &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>6月18号</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="deadline" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1217</x>
+      <y>0</y>
+      <width>383</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="deadline_in" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>38</y>
+       <width>261</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <widget class="QToolButton" name="deadline_pane_off">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>4</y>
+        <width>42</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icon.qrc">
+        <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>42</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="deadline_line">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>7</y>
+        <width>2</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(163, 163, 163);
+background-color: rgb(163, 163, 163);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="deadline_calendar">
+      <property name="geometry">
+       <rect>
+        <x>67</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="icon.qrc">
+        <normaloff>:/icon/calendar2_on.png</normaloff>:/icon/calendar2_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="deadline_date">
+      <property name="geometry">
+       <rect>
+        <x>127</x>
+        <y>18</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(163, 163, 163);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>6月18号</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>1217</x>
+      <y>88</y>
+      <width>383</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="describe" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1217</x>
+      <y>90</y>
+      <width>383</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <widget class="QPlainTextEdit" name="title">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>373</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25px &quot;微软雅黑&quot;;
+font-weight:bold</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="plainText">
+      <string>ui设计</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="detial">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>347</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 20px &quot;微软雅黑&quot;;
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="plainText">
+      <string>  描述怎么设计一个ui界面呢。。当然是让gq姐姐来设计了</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="subtasks" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>350</y>
+       <width>383</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="subtask_logo" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>120</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="subtask_text">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>35</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="icon.qrc">:/icon/childen.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="subtask_icon">
+       <property name="geometry">
+        <rect>
+         <x>35</x>
+         <y>2</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20px &quot;微软雅黑&quot;;</string>
+       </property>
+       <property name="text">
+        <string>子任务</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="subtask_bar" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>381</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <widget class="Line" name="subtask_line">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>270</width>
+         <height>2</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="subtask_pane_off">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>4</y>
+         <width>42</width>
+         <height>42</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>42</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="subtask_push_button">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>18</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="subtask_right_arrow">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>14</y>
+         <width>22</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icon.qrc">
+         <normaloff>:/icon/rightArrow_grey.png</normaloff>:/icon/rightArrow_grey.png</iconset>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="subtsak_new" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QToolButton" name="add_text">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icon.qrc">
+           <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="add">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(163, 163, 163);
+font: 15px &quot;微软雅黑&quot;;</string>
+         </property>
+         <property name="text">
+          <string>添加子任务</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>subtask_bar</zorder>
+     <zorder>subtask_logo</zorder>
+     <zorder>subtsak_new</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
