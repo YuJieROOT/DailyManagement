@@ -3,6 +3,7 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
+CONFIG+=sdk_no_version_check
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -16,14 +17,35 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    calendarPage.cpp \
+    countdownPage.cpp \
+    dustbinPage.cpp \
+    logPage.cpp \
     main.cpp \
-    mainwindow.cpp
+    searchPage.cpp \
+    settingPage.cpp \
+    todoPage.cpp \
+    userPage.cpp
 
 HEADERS += \
-    mainwindow.h
+    calendarPage.h \
+    countdownPage.h \
+    dustbinPage.h \
+    logPage.h \
+    searchPage.h \
+    settingPage.h \
+    todoPage.h \
+    userPage.h
 
 FORMS += \
-    mainwindow.ui
+    calendarPage.ui \
+    countdownPage.ui \
+    dustbinPage.ui \
+    logPage.ui \
+    searchPage.ui \
+    settingPage.ui \
+    todoPage.ui \
+    userPage.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -31,4 +53,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
+    icon.qrc \
     icon.qrc
