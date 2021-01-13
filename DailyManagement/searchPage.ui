@@ -60,6 +60,9 @@
        <bold>true</bold>
       </font>
      </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
      <property name="styleSheet">
       <string notr="true">font: 25px &quot;微软雅黑&quot;;
 font-weight:bold</string>
@@ -85,6 +88,9 @@ font-weight:bold</string>
        <width>347</width>
        <height>300</height>
       </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
      </property>
      <property name="styleSheet">
       <string notr="true">font: 20px &quot;微软雅黑&quot;;
@@ -342,7 +348,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
     <property name="geometry">
      <rect>
       <x>1218</x>
-      <y>-3</y>
+      <y>0</y>
       <width>383</width>
       <height>88</height>
      </rect>
@@ -866,8 +872,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>...</string>
@@ -2325,6 +2330,19 @@ font: 15px &quot;微软雅黑&quot;;</string>
       </widget>
      </widget>
     </widget>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>1217</x>
+      <y>88</y>
+      <width>383</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
    </widget>
   </widget>
  </widget>
