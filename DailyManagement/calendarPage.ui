@@ -66,7 +66,7 @@
       <number>100</number>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="todo_button">
@@ -92,7 +92,7 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="calendar_button">
@@ -118,7 +118,7 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="count_down_button">
@@ -144,7 +144,7 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="dustbin_button">
@@ -170,7 +170,7 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="search_button">
@@ -196,7 +196,7 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="log_button">
@@ -222,7 +222,7 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QToolButton" name="setting_button">
@@ -248,7 +248,7 @@
       </size>
      </property>
      <property name="autoRaise">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
     </widget>
     <zorder>todo_button</zorder>

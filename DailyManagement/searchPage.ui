@@ -36,8 +36,8 @@
    <widget class="QWidget" name="describe" native="true">
     <property name="geometry">
      <rect>
-      <x>1218</x>
-      <y>87</y>
+      <x>1217</x>
+      <y>90</y>
       <width>383</width>
       <height>881</height>
      </rect>
@@ -53,7 +53,7 @@
      </property>
      <property name="font">
       <font>
-       <family>微软雅黑</family>
+       <family>Microsoft YaHei</family>
        <pointsize>-1</pointsize>
        <weight>75</weight>
        <italic>false</italic>
@@ -61,7 +61,7 @@
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 25px &quot;微软雅黑&quot;;
+      <string notr="true">font: 25px &quot;Microsoft YaHei&quot;;
 font-weight:bold</string>
      </property>
      <property name="frameShape">
@@ -87,7 +87,7 @@ font-weight:bold</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 20px &quot;微软雅黑&quot;;
+      <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
 </string>
      </property>
      <property name="frameShape">
@@ -128,7 +128,7 @@ font-weight:bold</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="icon.qrc">:/icon/childen.png</pixmap>
+        <pixmap resource="rsc.qrc">:/icon/childen.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -144,7 +144,7 @@ font-weight:bold</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 20px &quot;微软雅黑&quot;;</string>
+        <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>子任务</string>
@@ -189,7 +189,7 @@ font-weight:bold</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
        </property>
        <property name="iconSize">
@@ -215,7 +215,7 @@ font-weight:bold</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
        </property>
        <property name="iconSize">
@@ -241,7 +241,7 @@ font-weight:bold</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/rightArrow_grey.png</normaloff>:/icon/rightArrow_grey.png</iconset>
        </property>
        <property name="autoRaise">
@@ -251,7 +251,7 @@ font-weight:bold</string>
       <widget class="QLineEdit" name="subtask_lineEdit">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>72</x>
          <y>10</y>
          <width>270</width>
          <height>30</height>
@@ -259,7 +259,7 @@ font-weight:bold</string>
        </property>
        <property name="font">
         <font>
-         <family>微软雅黑</family>
+         <family>Microsoft YaHei</family>
          <pointsize>10</pointsize>
          <weight>50</weight>
          <italic>false</italic>
@@ -267,7 +267,7 @@ font-weight:bold</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+        <string notr="true">font: 10pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>添加一个子任务</string>
@@ -293,7 +293,7 @@ font-weight:bold</string>
           <string>...</string>
          </property>
          <property name="icon">
-          <iconset resource="icon.qrc">
+          <iconset resource="rsc.qrc">
            <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
          </property>
          <property name="iconSize">
@@ -311,7 +311,7 @@ font-weight:bold</string>
         <widget class="QLabel" name="add">
          <property name="styleSheet">
           <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
          </property>
          <property name="text">
           <string>添加子任务</string>
@@ -341,8 +341,8 @@ font: 15px &quot;微软雅黑&quot;;</string>
    <widget class="QWidget" name="deadline" native="true">
     <property name="geometry">
      <rect>
-      <x>1218</x>
-      <y>-3</y>
+      <x>1217</x>
+      <y>0</y>
       <width>383</width>
       <height>88</height>
      </rect>
@@ -351,7 +351,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>38</y>
+       <y>40</y>
        <width>261</width>
        <height>50</height>
       </rect>
@@ -369,7 +369,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
       </property>
       <property name="iconSize">
@@ -412,7 +412,7 @@ background-color: rgb(163, 163, 163);</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/calendar2_on.png</normaloff>:/icon/calendar2_on.png</iconset>
       </property>
       <property name="iconSize">
@@ -436,7 +436,7 @@ background-color: rgb(163, 163, 163);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(163, 163, 163);
-font: 10pt &quot;微软雅黑&quot;;</string>
+font: 10pt &quot;Microsoft YaHei&quot;;</string>
       </property>
       <property name="text">
        <string>6月18号</string>
@@ -474,7 +474,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/user_off.png</normaloff>:/icon/user_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -512,7 +512,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/todo_off.png</normaloff>:/icon/todo_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -538,7 +538,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/calendar_off .png</normaloff>:/icon/calendar_off .png</iconset>
      </property>
      <property name="iconSize">
@@ -564,7 +564,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/count_down_off.png</normaloff>:/icon/count_down_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -590,7 +590,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/dustbin_off.png</normaloff>:/icon/dustbin_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -616,7 +616,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/search_on.png</normaloff>:/icon/search_on.png</iconset>
      </property>
      <property name="iconSize">
@@ -642,7 +642,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/log_off.png</normaloff>:/icon/log_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -668,7 +668,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/setting_off.png</normaloff>:/icon/setting_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -721,7 +721,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
       </property>
       <property name="iconSize">
@@ -738,14 +738,14 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>0</y>
+        <y>4</y>
         <width>101</width>
-        <height>45</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
+        <family>Microsoft YaHei</family>
         <pointsize>15</pointsize>
         <weight>50</weight>
         <italic>false</italic>
@@ -753,7 +753,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 15pt &quot;微软雅黑&quot;;
+       <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
 </string>
       </property>
       <property name="text">
@@ -773,7 +773,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/more_off.png</normaloff>:/icon/more_off.png</iconset>
       </property>
       <property name="iconSize">
@@ -811,7 +811,7 @@ border-radius:10px;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(192, 193, 197);
-font: 10pt &quot;微软雅黑&quot;;</string>
+font: 10pt &quot;Microsoft YaHei&quot;;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -850,7 +850,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
       </property>
       <property name="text">
        <string>所属工作区</string>
@@ -866,14 +866,13 @@ font: 15px &quot;微软雅黑&quot;;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/downArrow_grey.png</normaloff>:/icon/downArrow_grey.png</iconset>
       </property>
       <property name="iconSize">
@@ -926,7 +925,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>0</y>
+       <y>-180</y>
        <width>1154</width>
        <height>1000</height>
       </rect>
@@ -969,7 +968,7 @@ border-radius:10px</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -995,7 +994,7 @@ border-radius:10px</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1022,7 +1021,7 @@ border-radius:10px</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1052,7 +1051,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1067,7 +1066,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -1083,7 +1082,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -1143,7 +1142,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1169,7 +1168,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1196,7 +1195,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1226,7 +1225,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1241,7 +1240,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -1257,7 +1256,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -1317,7 +1316,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1343,7 +1342,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1370,7 +1369,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1400,7 +1399,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1415,7 +1414,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -1431,7 +1430,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -1491,7 +1490,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1517,7 +1516,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1544,7 +1543,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1574,7 +1573,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1589,7 +1588,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -1605,7 +1604,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -1665,7 +1664,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1691,7 +1690,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1718,7 +1717,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1748,7 +1747,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1763,7 +1762,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -1779,7 +1778,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -1839,7 +1838,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1865,7 +1864,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -1892,7 +1891,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1922,7 +1921,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1937,7 +1936,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -1953,7 +1952,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -2013,7 +2012,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -2039,7 +2038,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -2066,7 +2065,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -2096,7 +2095,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -2111,7 +2110,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -2127,7 +2126,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -2187,7 +2186,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -2213,7 +2212,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>...</string>
         </property>
         <property name="icon">
-         <iconset resource="icon.qrc">
+         <iconset resource="rsc.qrc">
           <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
         </property>
         <property name="iconSize">
@@ -2240,7 +2239,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(112, 112, 112);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -2270,7 +2269,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -2285,7 +2284,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; color:#ffc300;&quot;&gt;查找待办事项&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt;&quot;&gt;需要的步骤&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
@@ -2301,7 +2300,7 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>1月18号</string>
@@ -2329,7 +2328,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
   </widget>
  </widget>
  <resources>
-  <include location="icon.qrc"/>
+  <include location="rsc.qrc"/>
  </resources>
  <connections/>
 </ui>

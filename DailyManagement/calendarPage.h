@@ -28,6 +28,16 @@ private slots:
 
     void on_user_button_clicked();
 
+    void on_count_down_button_clicked();
+
+    void on_dustbin_button_clicked();
+
+    void on_search_button_clicked();
+
+    void on_log_button_clicked();
+
+    void on_setting_button_clicked();
+
 private:
     Ui::calendarPage *ui;
 };

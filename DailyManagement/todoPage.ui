@@ -52,7 +52,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/user_off.png</normaloff>:/icon/user_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -90,7 +90,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/todo_on.png</normaloff>:/icon/todo_on.png</iconset>
      </property>
      <property name="iconSize">
@@ -116,7 +116,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/calendar_off .png</normaloff>:/icon/calendar_off .png</iconset>
      </property>
      <property name="iconSize">
@@ -142,7 +142,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/count_down_off.png</normaloff>:/icon/count_down_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -168,7 +168,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/dustbin_off.png</normaloff>:/icon/dustbin_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -194,7 +194,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/search_off.png</normaloff>:/icon/search_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -220,7 +220,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/log_off.png</normaloff>:/icon/log_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -246,7 +246,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/setting_off.png</normaloff>:/icon/setting_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -308,7 +308,7 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/inbox_off.png</normaloff>:/icon/inbox_off.png</iconset>
        </property>
        <property name="iconSize">
@@ -332,9 +332,15 @@
        </property>
        <property name="font">
         <font>
-         <family>微软雅黑</family>
+         <family>Microsoft YaHei</family>
          <pointsize>15</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>草稿箱</string>
@@ -351,12 +357,16 @@
        </property>
        <property name="font">
         <font>
-         <family>微软雅黑</family>
+         <family>Microsoft YaHei</family>
          <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(163, 163, 163);</string>
+        <string notr="true">color: rgb(163, 163, 163);
+font: 10pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>18</string>
@@ -416,7 +426,7 @@ border-radius:10px</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/working_table.png</normaloff>:/icon/working_table.png</iconset>
        </property>
        <property name="iconSize">
@@ -440,9 +450,15 @@ border-radius:10px</string>
        </property>
        <property name="font">
         <font>
-         <family>微软雅黑</family>
+         <family>Microsoft YaHei</family>
          <pointsize>15</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>家庭</string>
@@ -461,7 +477,7 @@ border-radius:10px</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/right_arrow.png</normaloff>:/icon/right_arrow.png</iconset>
        </property>
        <property name="iconSize">
@@ -524,7 +540,7 @@ background-color: rgb(237, 238, 238);</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/working_table.png</normaloff>:/icon/working_table.png</iconset>
        </property>
        <property name="iconSize">
@@ -548,9 +564,15 @@ background-color: rgb(237, 238, 238);</string>
        </property>
        <property name="font">
         <font>
-         <family>微软雅黑</family>
+         <family>Microsoft YaHei</family>
          <pointsize>15</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>工作</string>
@@ -569,7 +591,7 @@ background-color: rgb(237, 238, 238);</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/right_arrow.png</normaloff>:/icon/right_arrow.png</iconset>
        </property>
        <property name="iconSize">
@@ -623,7 +645,7 @@ background-color: rgb(237, 238, 238);</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
       </property>
       <property name="iconSize">
@@ -647,7 +669,7 @@ background-color: rgb(237, 238, 238);</string>
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
+        <family>Microsoft YaHei</family>
         <pointsize>8</pointsize>
         <weight>50</weight>
         <italic>false</italic>
@@ -655,7 +677,7 @@ background-color: rgb(237, 238, 238);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 8pt &quot;微软雅黑&quot;;
+       <string notr="true">font: 8pt &quot;Microsoft YaHei&quot;;
 color: rgb(163, 163, 163);</string>
       </property>
       <property name="text">
@@ -712,7 +734,7 @@ border-color: rgb(237, 238, 238);</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
       </property>
       <property name="iconSize">
@@ -736,7 +758,7 @@ border-color: rgb(237, 238, 238);</string>
       </property>
       <property name="font">
        <font>
-        <family>微软雅黑</family>
+        <family>Microsoft YaHei</family>
         <pointsize>15</pointsize>
         <weight>50</weight>
         <italic>false</italic>
@@ -744,7 +766,7 @@ border-color: rgb(237, 238, 238);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 15pt &quot;微软雅黑&quot;;
+       <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
 </string>
       </property>
       <property name="text">
@@ -764,7 +786,7 @@ border-color: rgb(237, 238, 238);</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/more_off.png</normaloff>:/icon/more_off.png</iconset>
       </property>
       <property name="iconSize">
@@ -802,7 +824,7 @@ border-radius:10px;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(192, 193, 197);
-font: 10pt &quot;微软雅黑&quot;;</string>
+font: 10pt &quot;Microsoft YaHei&quot;;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -907,7 +929,7 @@ border-radius:10px</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
        </property>
        <property name="iconSize">
@@ -933,7 +955,7 @@ border-radius:10px</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
        </property>
        <property name="iconSize">
@@ -957,7 +979,7 @@ border-radius:10px</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
-font: 13pt &quot;微软雅黑&quot;;</string>
+font: 13pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="verticalScrollBarPolicy">
         <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -995,7 +1017,7 @@ background-color: rgb(237, 238, 238);</string>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
 background-color: rgba(255, 255, 255, 0);
-font: 10pt &quot;微软雅黑&quot;;</string>
+font: 10pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>6月18号</string>
@@ -1035,7 +1057,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
       </property>
       <property name="iconSize">
@@ -1078,7 +1100,7 @@ background-color: rgb(163, 163, 163);</string>
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="icon.qrc">
+       <iconset resource="rsc.qrc">
         <normaloff>:/icon/calendar2_on.png</normaloff>:/icon/calendar2_on.png</iconset>
       </property>
       <property name="iconSize">
@@ -1102,7 +1124,7 @@ background-color: rgb(163, 163, 163);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(163, 163, 163);
-font: 10pt &quot;微软雅黑&quot;;</string>
+font: 10pt &quot;Microsoft YaHei&quot;;</string>
       </property>
       <property name="text">
        <string>6月18号</string>
@@ -1113,8 +1135,8 @@ font: 10pt &quot;微软雅黑&quot;;</string>
    <widget class="Line" name="line_4">
     <property name="geometry">
      <rect>
-      <x>1217</x>
-      <y>88</y>
+      <x>1215</x>
+      <y>85</y>
       <width>383</width>
       <height>2</height>
      </rect>
@@ -1143,7 +1165,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
      </property>
      <property name="font">
       <font>
-       <family>微软雅黑</family>
+       <family>Microsoft YaHei</family>
        <pointsize>-1</pointsize>
        <weight>75</weight>
        <italic>false</italic>
@@ -1151,7 +1173,7 @@ font: 10pt &quot;微软雅黑&quot;;</string>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 25px &quot;微软雅黑&quot;;
+      <string notr="true">font: 25px &quot;Microsoft YaHei&quot;;
 font-weight:bold</string>
      </property>
      <property name="frameShape">
@@ -1177,7 +1199,7 @@ font-weight:bold</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 20px &quot;微软雅黑&quot;;
+      <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
 </string>
      </property>
      <property name="frameShape">
@@ -1218,7 +1240,7 @@ font-weight:bold</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="icon.qrc">:/icon/childen.png</pixmap>
+        <pixmap resource="rsc.qrc">:/icon/childen.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -1234,7 +1256,7 @@ font-weight:bold</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 20px &quot;微软雅黑&quot;;</string>
+        <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>子任务</string>
@@ -1279,7 +1301,7 @@ font-weight:bold</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
        </property>
        <property name="iconSize">
@@ -1305,7 +1327,7 @@ font-weight:bold</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
        </property>
        <property name="iconSize">
@@ -1331,7 +1353,7 @@ font-weight:bold</string>
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="icon.qrc">
+        <iconset resource="rsc.qrc">
          <normaloff>:/icon/rightArrow_grey.png</normaloff>:/icon/rightArrow_grey.png</iconset>
        </property>
        <property name="autoRaise">
@@ -1341,7 +1363,7 @@ font-weight:bold</string>
       <widget class="QLineEdit" name="subtask_lineEdit">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>72</x>
          <y>10</y>
          <width>270</width>
          <height>30</height>
@@ -1349,7 +1371,7 @@ font-weight:bold</string>
        </property>
        <property name="font">
         <font>
-         <family>微软雅黑</family>
+         <family>Microsoft YaHei</family>
          <pointsize>10</pointsize>
          <weight>50</weight>
          <italic>false</italic>
@@ -1357,7 +1379,7 @@ font-weight:bold</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
+        <string notr="true">font: 10pt &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>添加一个子任务</string>
@@ -1383,7 +1405,7 @@ font-weight:bold</string>
           <string>...</string>
          </property>
          <property name="icon">
-          <iconset resource="icon.qrc">
+          <iconset resource="rsc.qrc">
            <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
          </property>
          <property name="iconSize">
@@ -1401,7 +1423,7 @@ font-weight:bold</string>
         <widget class="QLabel" name="add">
          <property name="styleSheet">
           <string notr="true">color: rgb(163, 163, 163);
-font: 15px &quot;微软雅黑&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
          </property>
          <property name="text">
           <string>添加子任务</string>
@@ -1418,7 +1440,7 @@ font: 15px &quot;微软雅黑&quot;;</string>
   </widget>
  </widget>
  <resources>
-  <include location="icon.qrc"/>
+  <include location="rsc.qrc"/>
  </resources>
  <connections/>
 </ui>
