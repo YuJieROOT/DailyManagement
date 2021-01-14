@@ -1135,8 +1135,8 @@ font: 10pt &quot;Microsoft YaHei&quot;;</string>
    <widget class="Line" name="line_4">
     <property name="geometry">
      <rect>
-      <x>1215</x>
-      <y>85</y>
+      <x>1217</x>
+      <y>88</y>
       <width>383</width>
       <height>2</height>
      </rect>
