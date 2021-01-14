@@ -1223,6 +1223,19 @@ font: 35px &quot;STHupo&quot;;</string>
      </widget>
     </widget>
    </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>1217</x>
+      <y>88</y>
+      <width>383</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>
