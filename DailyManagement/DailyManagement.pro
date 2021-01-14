@@ -23,6 +23,7 @@ SOURCES += \
     dustbinPage.cpp \
     logPage.cpp \
     main.cpp \
+    mainwindow.cpp \
     searchPage.cpp \
     settingPage.cpp \
     todoPage.cpp \
@@ -33,6 +34,7 @@ HEADERS += \
     countdownPage.h \
     dustbinPage.h \
     logPage.h \
+    mainwindow.h \
     searchPage.h \
     settingPage.h \
     todoPage.h \
@@ -43,6 +45,7 @@ FORMS += \
     countdownPage.ui \
     dustbinPage.ui \
     logPage.ui \
+    mainwindow.ui \
     searchPage.ui \
     settingPage.ui \
     todoPage.ui \

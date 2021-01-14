@@ -367,7 +367,7 @@ background-color: rgb(163, 163, 163);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(163, 163, 163);
-font: 15pt &quot;Microsoft YaHei&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
       </property>
       <property name="text">
        <string>6月18号</string>
@@ -611,7 +611,7 @@ font-weight:bold</string>
        <property name="font">
         <font>
          <family>Microsoft YaHei</family>
-         <pointsize>13</pointsize>
+         <pointsize>-1</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
@@ -621,7 +621,7 @@ font-weight:bold</string>
         <enum>Qt::ClickFocus</enum>
        </property>
        <property name="styleSheet">
-        <string notr="true">font: 13pt &quot;Microsoft YaHei&quot;;</string>
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>添加一个子任务</string>
@@ -723,6 +723,9 @@ font: 12px &quot;Microsoft YaHei&quot;;</string>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
     </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
     <property name="widgetResizable">
      <bool>false</bool>
     </property>
@@ -785,6 +788,9 @@ border-radius:10px</string>
           <height>15</height>
          </size>
         </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
        </widget>
        <widget class="QToolButton" name="countdown_bar_pane_off">
         <property name="geometry">
@@ -829,7 +835,7 @@ border-radius:10px</string>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgba(255, 255, 255, 0);
-font: 15pt &quot;Microsoft YaHei&quot;;</string>
+font: 20px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -959,6 +965,9 @@ font: 30px &quot;STHupo&quot;;</string>
           <height>15</height>
          </size>
         </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
        </widget>
        <widget class="QToolButton" name="countdown_bar_pane_off_2">
         <property name="geometry">
@@ -1003,7 +1012,7 @@ font: 30px &quot;STHupo&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgba(255, 255, 255, 0);
-font: 15pt &quot;Microsoft YaHei&quot;;</string>
+font: 20px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -1133,6 +1142,9 @@ font: 30px &quot;STHupo&quot;;</string>
           <height>15</height>
          </size>
         </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
        </widget>
        <widget class="QToolButton" name="countdown_bar_pane_off_3">
         <property name="geometry">
@@ -1177,7 +1189,7 @@ font: 30px &quot;STHupo&quot;;</string>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgba(255, 255, 255, 0);
-font: 15pt &quot;Microsoft YaHei&quot;;</string>
+font: 20px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
