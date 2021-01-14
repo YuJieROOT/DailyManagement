@@ -318,9 +318,9 @@ background-color: rgb(255, 255, 255);
      <widget class="QWidget" name="countdown_bar" native="true">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>865</width>
+        <x>10</x>
+        <y>5</y>
+        <width>825</width>
         <height>100</height>
        </rect>
       </property>
@@ -348,6 +348,9 @@ border-radius:10px</string>
           <width>20</width>
           <height>20</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -484,7 +487,7 @@ font: 30px &quot;STHupo&quot;;</string>
         <rect>
          <x>90</x>
          <y>95</y>
-         <width>780</width>
+         <width>720</width>
          <height>3</height>
         </rect>
        </property>
@@ -499,9 +502,9 @@ font: 30px &quot;STHupo&quot;;</string>
      <widget class="QWidget" name="countdown_bar_2" native="true">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>100</y>
-        <width>865</width>
+        <x>10</x>
+        <y>110</y>
+        <width>825</width>
         <height>100</height>
        </rect>
       </property>
@@ -525,6 +528,9 @@ font: 30px &quot;STHupo&quot;;</string>
           <width>20</width>
           <height>20</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -661,7 +667,7 @@ font: 30px &quot;STHupo&quot;;</string>
         <rect>
          <x>90</x>
          <y>95</y>
-         <width>780</width>
+         <width>720</width>
          <height>3</height>
         </rect>
        </property>
@@ -676,9 +682,9 @@ font: 30px &quot;STHupo&quot;;</string>
      <widget class="QWidget" name="countdown_bar_3" native="true">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>200</y>
-        <width>865</width>
+        <x>10</x>
+        <y>215</y>
+        <width>825</width>
         <height>100</height>
        </rect>
       </property>
@@ -702,6 +708,9 @@ font: 30px &quot;STHupo&quot;;</string>
           <width>20</width>
           <height>20</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
          <string>...</string>
@@ -829,7 +838,7 @@ font: 30px &quot;STHupo&quot;;</string>
         <rect>
          <x>90</x>
          <y>95</y>
-         <width>780</width>
+         <width>720</width>
          <height>3</height>
         </rect>
        </property>
@@ -924,6 +933,9 @@ background-color: rgb(163, 163, 163);</string>
          <width>30</width>
          <height>30</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -1057,6 +1069,9 @@ font-weight:bold</string>
           <width>35</width>
           <height>35</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
          <string/>

@@ -310,6 +310,9 @@ background-color: rgb(255, 255, 255);
          <height>30</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
        <property name="text">
         <string>...</string>
        </property>
@@ -428,6 +431,9 @@ border-radius:10px</string>
          <height>30</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
        <property name="text">
         <string>...</string>
        </property>
@@ -478,6 +484,9 @@ border-radius:10px</string>
          <width>30</width>
          <height>30</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -542,6 +551,9 @@ background-color: rgb(237, 238, 238);</string>
          <height>30</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
        <property name="text">
         <string>...</string>
        </property>
@@ -592,6 +604,9 @@ background-color: rgb(237, 238, 238);</string>
          <width>30</width>
          <height>30</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -750,6 +765,9 @@ border-color: rgb(237, 238, 238);</string>
          <width>32</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -920,6 +938,9 @@ border-radius:10px</string>
           <height>15</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+        </property>
         <property name="text">
          <string>...</string>
         </property>
@@ -1003,7 +1024,7 @@ background-color: rgb(237, 238, 238);</string>
        <widget class="QLabel" name="todo_bar_date">
         <property name="geometry">
          <rect>
-          <x>740</x>
+          <x>520</x>
           <y>20</y>
           <width>68</width>
           <height>15</height>
@@ -1103,6 +1124,9 @@ background-color: rgb(163, 163, 163);</string>
          <width>30</width>
          <height>30</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
        </property>
        <property name="text">
         <string>...</string>
@@ -1236,6 +1260,9 @@ font-weight:bold</string>
           <width>35</width>
           <height>35</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
          <string/>
