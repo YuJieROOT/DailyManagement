@@ -6,22 +6,2532 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1600</width>
-    <height>975</height>
+    <width>1200</width>
+    <height>675</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget
+{
+background-color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <widget class="QWidget" name="left4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>926</x>
+      <y>0</y>
+      <width>274</width>
+      <height>675</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="todo" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>274</width>
+       <height>335</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="inboxAndworkplace" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>81</y>
+        <width>274</width>
+        <height>255</height>
+       </rect>
+      </property>
+      <widget class="QScrollArea" name="inbox_scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>274</width>
+         <height>255</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QScrollArea{
+border: 0px solid;
+border-right-width: 1px;
+border-right-color: #dcdbdc;
+background-color: #f5f5f7
+}
+QScrollBar:vertical {
+border: none;
+background: #f5f5f7;
+width: 10px;
+margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+background: Gainsboro;
+min-height: 20px;
+border-radius: 5px;
+border: none;
+}
+QScrollBar::add-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+background: none;
+width: 0px;
+height: 0px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustIgnored</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="inbox_scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>263</width>
+          <height>800</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <widget class="QWidget" name="working_place_family" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>65</y>
+           <width>261</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(246, 246, 246, 125);
+border-radius:10px</string>
+         </property>
+         <widget class="QWidget" name="working_place_family_in" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>260</width>
+            <height>65</height>
+           </rect>
+          </property>
+          <widget class="QToolButton" name="working_place_family_icon">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>16</y>
+             <width>30</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rsc.qrc">
+             <normaloff>:/icon/working_table.png</normaloff>:/icon/working_table.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="working_place_family_text">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>16</y>
+             <width>50</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;</string>
+           </property>
+           <property name="text">
+            <string>家庭</string>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="working_place_family_rightarrow">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>25</y>
+             <width>25</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rsc.qrc">
+             <normaloff>:/icon/downArrow_grey.png</normaloff>:/icon/downArrow_grey.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="Line" name="working_place_family_line">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>68</y>
+            <width>254</width>
+            <height>2</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="working_place_work" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>185</y>
+           <width>261</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <widget class="QWidget" name="working_place_work_in" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>260</width>
+            <height>65</height>
+           </rect>
+          </property>
+          <widget class="QToolButton" name="working_place_work_icon">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>16</y>
+             <width>30</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rsc.qrc">
+             <normaloff>:/icon/working_table.png</normaloff>:/icon/working_table.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="working_place_work_text">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>16</y>
+             <width>50</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;</string>
+           </property>
+           <property name="text">
+            <string>工作</string>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="working_place_work_rightarrow">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>20</y>
+             <width>30</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rsc.qrc">
+             <normaloff>:/icon/rightArrow_grey.png</normaloff>:/icon/rightArrow_grey.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="Line" name="working_place_work_line">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>68</y>
+            <width>254</width>
+            <height>10</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="inbox" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>261</width>
+           <height>70</height>
+          </rect>
+         </property>
+         <widget class="QWidget" name="inbox_in" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>260</width>
+            <height>65</height>
+           </rect>
+          </property>
+          <widget class="QToolButton" name="inbox_button">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>16</y>
+             <width>30</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rsc.qrc">
+             <normaloff>:/icon/inbox_off.png</normaloff>:/icon/inbox_off.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="inbox_text">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>16</y>
+             <width>75</width>
+             <height>33</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;</string>
+           </property>
+           <property name="text">
+            <string>草稿箱</string>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="inbox_rightarrow">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>20</y>
+             <width>30</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="icon">
+            <iconset resource="rsc.qrc">
+             <normaloff>:/icon/rightArrow_grey.png</normaloff>:/icon/rightArrow_grey.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="Line" name="inbox_line">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>68</y>
+            <width>254</width>
+            <height>10</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="todo_bar" native="true">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>135</y>
+           <width>221</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+border-radius:10px</string>
+         </property>
+         <widget class="QToolButton" name="todo_bar_pushbutton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>17</y>
+            <width>15</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="todo_bar_pane_off">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>4</y>
+            <width>42</width>
+            <height>42</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>42</width>
+            <height>42</height>
+           </size>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="todo_bar_plainTextEdit">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>10</y>
+            <width>510</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 12pt &quot;Microsoft YaHei&quot;;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="plainText">
+           <string>ui设计</string>
+          </property>
+         </widget>
+         <widget class="Line" name="todo_bar_line">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>40</y>
+            <width>141</width>
+            <height>3</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="deadline" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>274</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="deadline_in" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>195</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <widget class="QToolButton" name="deadline_pane_off">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>7</y>
+          <width>35</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="rsc.qrc">
+          <normaloff>:/icon/todo_off.png</normaloff>:/icon/todo_off.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="Line" name="deadline_line">
+        <property name="geometry">
+         <rect>
+          <x>45</x>
+          <y>7</y>
+          <width>2</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(163, 163, 163);
+background-color: rgb(163, 163, 163);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="deadline_date">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>15</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;</string>
+        </property>
+        <property name="text">
+         <string>待办</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>274</width>
+         <height>2</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="common_events" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>335</y>
+       <width>274</width>
+       <height>340</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="common_events_workplace" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>81</y>
+        <width>274</width>
+        <height>260</height>
+       </rect>
+      </property>
+      <widget class="QScrollArea" name="common_events_scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>274</width>
+         <height>225</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QScrollArea{
+border: 0px solid;
+border-right-width: 1px;
+border-right-color: #dcdbdc;
+background-color: #f5f5f7
+}
+QScrollBar:vertical {
+border: none;
+background: #f5f5f7;
+width: 10px;
+margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+background: Gainsboro;
+min-height: 20px;
+border-radius: 5px;
+border: none;
+}
+QScrollBar::add-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+background: none;
+width: 0px;
+height: 0px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustIgnored</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="common_events_Contents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>263</width>
+          <height>800</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <widget class="QWidget" name="common_events_bar" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>260</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+border-radius:10px</string>
+         </property>
+         <widget class="QToolButton" name="common_eventsbar_pushbutton">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>16</y>
+            <width>15</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="common_events_bar_pane_off">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>4</y>
+            <width>42</width>
+            <height>42</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>42</width>
+            <height>42</height>
+           </size>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="common_events_bar_plainTextEdit">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>10</y>
+            <width>510</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 12pt &quot;Microsoft YaHei&quot;;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="plainText">
+           <string>ui设计</string>
+          </property>
+         </widget>
+         <widget class="Line" name="common_events_bar_line">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>40</y>
+            <width>180</width>
+            <height>3</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="common_events_bar_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>50</y>
+           <width>260</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+border-radius:10px</string>
+         </property>
+         <widget class="QToolButton" name="common_events_bar_pushbutton_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>16</y>
+            <width>15</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="common_events_bar_plainTextEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>10</y>
+            <width>510</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 12pt &quot;Microsoft YaHei&quot;;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="plainText">
+           <string>ui设计</string>
+          </property>
+         </widget>
+         <widget class="Line" name="common_events_bar_line_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>40</y>
+            <width>180</width>
+            <height>3</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="common_events_bar_3" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>100</y>
+           <width>260</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+border-radius:10px</string>
+         </property>
+         <widget class="QToolButton" name="common_events_bar_pushbutton_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>16</y>
+            <width>15</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="common_events_bar_pane_off_3">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>4</y>
+            <width>42</width>
+            <height>42</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>42</width>
+            <height>42</height>
+           </size>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPlainTextEdit" name="common_events_bar_plainTextEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>10</y>
+            <width>510</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 12pt &quot;Microsoft YaHei&quot;;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="plainText">
+           <string>ui设计</string>
+          </property>
+         </widget>
+         <widget class="Line" name="common_events_bar_line_3">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>40</y>
+            <width>180</width>
+            <height>3</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="common_events_new" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>225</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <widget class="QToolButton" name="common_events_add_text">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>12</y>
+          <width>17</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="rsc.qrc">
+          <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>25</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="common_events_add">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(163, 163, 163);
+font: 12px &quot;Microsoft YaHei&quot;;</string>
+        </property>
+        <property name="text">
+         <string>添加常用事件</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="common_events_title" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>274</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="common_events_title_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>195</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <widget class="QToolButton" name="common_events_push_off">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>13</y>
+          <width>25</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="rsc.qrc">
+          <normaloff>:/icon/push_off.png</normaloff>:/icon/push_off.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>42</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="Line" name="common_events_line">
+        <property name="geometry">
+         <rect>
+          <x>45</x>
+          <y>7</y>
+          <width>2</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(163, 163, 163);
+background-color: rgb(163, 163, 163);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="common_events_label">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>15</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;</string>
+        </property>
+        <property name="text">
+         <string>常用事件</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>274</width>
+         <height>2</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="left3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>0</y>
+      <width>640</width>
+      <height>675</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="calendar_title" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>640</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <widget class="QToolButton" name="calendar_title_more">
+      <property name="geometry">
+       <rect>
+        <x>588</x>
+        <y>14</y>
+        <width>32</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="rsc.qrc">
+        <normaloff>:/icon/more_off.png</normaloff>:/icon/more_off.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="calendar_title_view" native="true">
+      <property name="geometry">
+       <rect>
+        <x>271</x>
+        <y>25</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QToolButton" name="day_view">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(227,227,227);
+border-top-left-radius:8px;
+border-bottom-left-radius:8px;</string>
+       </property>
+       <property name="text">
+        <string>日</string>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="week_view">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(246,246,246);</string>
+       </property>
+       <property name="text">
+        <string>周</string>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="month_view">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(246,246,246);</string>
+       </property>
+       <property name="text">
+        <string>月</string>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="year_view">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(246,246,246);
+border-top-right-radius:8px;
+border-bottom-right-radius:8px;</string>
+       </property>
+       <property name="text">
+        <string>年</string>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="dcalendar_title_date">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>20</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>20121年1月6日</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="calendar_title_week">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>41</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>星期三</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="calendar_title_calendar">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>15</y>
+        <width>31</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="rsc.qrc">
+        <normaloff>:/icon/calendar2_on.png</normaloff>:/icon/calendar2_on.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>2</width>
+       <height>675</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(237, 238, 238);
+border-color: rgb(237, 238, 238);</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="schedule" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>81</y>
+       <width>640</width>
+       <height>594</height>
+      </rect>
+     </property>
+     <widget class="QScrollArea" name="schedule_scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>45</y>
+        <width>639</width>
+        <height>549</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QScrollArea{
+border: 0px solid;
+border-right-width: 1px;
+border-right-color: #dcdbdc;
+background-color: #f5f5f7;
+}
+QScrollBar:vertical {
+border: none;
+background: #f5f5f7;
+width: 10px;
+margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+background: Gainsboro;
+min-height: 20px;
+border-radius: 5px;
+border: none;
+}
+QScrollBar::add-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+background: none;
+width: 0px;
+height: 0px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="schedule_scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-2</y>
+         <width>628</width>
+         <height>1125</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <widget class="QLabel" name="time_am12">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午12时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>45</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午1时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午2时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>135</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午3时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午4时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>225</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午5时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>270</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午6时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>315</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午7时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>360</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午8时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>405</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午9时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>450</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午10时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_am11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>495</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>上午11时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_mid">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>540</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>正文</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>585</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午1时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>630</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午2时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>675</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午3时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>720</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午4时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>765</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午5时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>810</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午6时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>855</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午7时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>900</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午8时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>945</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午9时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>990</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午10时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>1035</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午11时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="time_pm12">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>1080</y>
+          <width>111</width>
+          <height>45</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+        </property>
+        <property name="text">
+         <string>下午12时</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am1">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>67</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am12">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>22</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>112</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>157</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am4">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>202</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am5">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>247</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am6">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>292</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am7">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>337</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am8">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>382</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am9">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>427</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am10">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>472</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_am11">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>517</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_mid">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>562</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm1">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>607</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>652</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>697</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm4">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>742</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm5">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>787</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm6">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>832</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm7">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>877</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm8">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>922</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm9">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>967</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm10">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>1012</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm11">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>1057</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_pm12">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>1102</y>
+          <width>508</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="allday">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>111</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20px &quot;Microsoft YaHei&quot;;
+color:rgb(192,193,197)</string>
+      </property>
+      <property name="text">
+       <string>全天</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>45</y>
+        <width>630</width>
+        <height>4</height>
+       </rect>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>925</x>
+      <y>0</y>
+      <width>2</width>
+      <height>675</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(237, 238, 238);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
    <widget class="QWidget" name="toolbar" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
       <width>60</width>
-      <height>975</height>
+      <height>675</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(246, 246, 246);</string>
@@ -44,7 +2554,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/user_off.png</normaloff>:/icon/user_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -82,7 +2592,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/todo_off.png</normaloff>:/icon/todo_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -108,7 +2618,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/calendar_on.png</normaloff>:/icon/calendar_on.png</iconset>
      </property>
      <property name="iconSize">
@@ -134,7 +2644,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/count_down_off.png</normaloff>:/icon/count_down_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -160,7 +2670,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/dustbin_off.png</normaloff>:/icon/dustbin_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -186,7 +2696,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/search_off.png</normaloff>:/icon/search_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -212,7 +2722,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/log_off.png</normaloff>:/icon/log_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -238,7 +2748,7 @@
       <string>...</string>
      </property>
      <property name="icon">
-      <iconset resource="icon.qrc">
+      <iconset resource="rsc.qrc">
        <normaloff>:/icon/setting_off.png</normaloff>:/icon/setting_off.png</iconset>
      </property>
      <property name="iconSize">
@@ -260,10 +2770,1467 @@
     <zorder>setting_button</zorder>
     <zorder>user_button</zorder>
    </widget>
+   <widget class="QWidget" name="left2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>225</width>
+      <height>675</height>
+     </rect>
+    </property>
+    <widget class="QScrollArea" name="calendarBook_scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>225</width>
+       <height>415</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QScrollArea{
+border: 0px solid;
+border-right-width: 1px;
+border-right-color: #dcdbdc;
+background-color: #f5f5f7;
+}
+QScrollBar:vertical {
+border: none;
+background: #f5f5f7;
+width: 10px;
+margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+background: Gainsboro;
+min-height: 20px;
+border-radius: 5px;
+border: none;
+}
+QScrollBar::add-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+border: 0px solid grey;
+background: #32CC99;
+height: 0px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+background: none;
+width: 0px;
+height: 0px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustIgnored</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="calendarBook_scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>214</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <widget class="QWidget" name="calendarBook_birth" native="true">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>5</y>
+         <width>205</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border-radius:10px</string>
+       </property>
+       <widget class="QWidget" name="calendarBook_birth_in" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>225</width>
+          <height>65</height>
+         </rect>
+        </property>
+        <widget class="QToolButton" name="calendarBook_birth_icon">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>16</y>
+           <width>30</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rsc.qrc">
+           <normaloff>:/icon/select_on_red.png</normaloff>:/icon/select_on_red.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="calendarBook_birth_text">
+         <property name="geometry">
+          <rect>
+           <x>65</x>
+           <y>16</y>
+           <width>50</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;</string>
+         </property>
+         <property name="text">
+          <string>生日</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="calendarBook_birth_line">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>68</y>
+          <width>205</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="calendarBook_family" native="true">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>80</y>
+         <width>205</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="calendarBook_family_in" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>225</width>
+          <height>65</height>
+         </rect>
+        </property>
+        <widget class="QToolButton" name="calendarBook_family_icon">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>16</y>
+           <width>30</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rsc.qrc">
+           <normaloff>:/icon/select_on_blue.png</normaloff>:/icon/select_on_blue.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="calendarBook_family_text">
+         <property name="geometry">
+          <rect>
+           <x>65</x>
+           <y>16</y>
+           <width>50</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;</string>
+         </property>
+         <property name="text">
+          <string>家庭</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="calendarBook_family_line">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>68</y>
+          <width>205</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="calendarBook_work" native="true">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>155</y>
+         <width>205</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="calendarBook_work_in" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>225</width>
+          <height>65</height>
+         </rect>
+        </property>
+        <widget class="QToolButton" name="calendarBook_work_icon">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>16</y>
+           <width>30</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rsc.qrc">
+           <normaloff>:/icon/select_on_yellow.png</normaloff>:/icon/select_on_yellow.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="calendarBook_work_text">
+         <property name="geometry">
+          <rect>
+           <x>65</x>
+           <y>16</y>
+           <width>50</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei</family>
+           <pointsize>12</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;</string>
+         </property>
+         <property name="text">
+          <string>工作</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="Line" name="calendarBook_work_line">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>68</y>
+          <width>205</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(237, 238, 238);
+background-color: rgb(237, 238, 238);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="calendar_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>450</y>
+       <width>225</width>
+       <height>225</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="year_month" native="true">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>0</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>35</x>
+         <y>5</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 25px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>2021年1月</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="pre_month">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>8</y>
+         <width>25</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/icon/leftArrow_black.png</normaloff>:/icon/leftArrow_black.png</iconset>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="next_month">
+       <property name="geometry">
+        <rect>
+         <x>181</x>
+         <y>8</y>
+         <width>25</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="rsc.qrc">
+         <normaloff>:/icon/rightArrow_black.png</normaloff>:/icon/rightArrow_black.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="day" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>48</y>
+        <width>224</width>
+        <height>175</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="sunday">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>日</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="monday">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>0</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>一</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="tuesday">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>0</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>二</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="wednesday">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>0</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>三</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="thursday">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>0</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>四</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="friday">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>0</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>五</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="saturday">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>0</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+font-weight:bold</string>
+       </property>
+       <property name="text">
+        <string>六</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day1_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>25</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>27</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day1_2">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>25</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day1_3">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>25</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>29</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day1_4">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>25</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>30</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day1_5">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>25</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>31</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day1_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>25</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day1_7">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>25</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day2_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>50</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day2_2">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>50</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day2_3">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>50</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day2_4">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>50</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+background-color:rgb(252, 0, 26);
+color:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day2_5">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>50</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day2_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>50</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day2_7">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>50</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day3_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>75</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>10</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day3_2">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>75</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>11</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day3_3">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>75</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>12</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day3_4">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>75</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>13</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day3_5">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>75</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>14</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day3_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>75</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>15</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day3_7">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>75</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>16</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day4_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>17</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day4_2">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>100</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>18</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day4_3">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>100</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>19</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day4_4">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>100</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>20</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day4_5">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>100</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>21</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day4_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>100</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>22</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day4_7">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>100</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>23</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day5_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>125</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>24</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day5_2">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>125</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>25</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day5_3">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>125</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>26</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day5_4">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>125</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>27</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day5_5">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>125</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>28</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day5_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>125</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>29</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day5_7">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>125</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>30</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day6_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>150</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;</string>
+       </property>
+       <property name="text">
+        <string>31</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day6_2">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>150</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day6_3">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>150</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day6_4">
+       <property name="geometry">
+        <rect>
+         <x>96</x>
+         <y>150</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day6_5">
+       <property name="geometry">
+        <rect>
+         <x>128</x>
+         <y>150</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day6_6">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>150</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="day6_7">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>150</y>
+         <width>32</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 13px &quot;Microsoft YaHei&quot;;
+color:rgb(168, 168, 168)</string>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="new_workplace" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>415</y>
+       <width>120</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QToolButton" name="new_workplace_button">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="rsc.qrc">
+          <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="new_workplace_text">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;Microsoft YaHei&quot;;
+color: rgb(163, 163, 163);</string>
+        </property>
+        <property name="text">
+         <string>新建日程表</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <resources>
-  <include location="icon.qrc"/>
+  <include location="rsc.qrc"/>
  </resources>
  <connections/>
 </ui>

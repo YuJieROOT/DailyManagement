@@ -23,6 +23,21 @@ public:
     explicit logPage(QWidget *parent = nullptr);
     ~logPage();
 
+private slots:
+    void on_user_button_clicked();
+
+    void on_todo_button_clicked();
+
+    void on_calendar_button_clicked();
+
+    void on_count_down_button_clicked();
+
+    void on_dustbin_button_clicked();
+
+    void on_search_button_clicked();
+
+    void on_setting_button_clicked();
+
 private:
     Ui::logPage *ui;
 };

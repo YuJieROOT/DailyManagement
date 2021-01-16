@@ -348,7 +348,7 @@ height: 0px;
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>865</width>
+       <width>853</width>
        <height>1000</height>
       </rect>
      </property>
@@ -913,8 +913,8 @@ font: 30px &quot;STHupo&quot;;</string>
      <widget class="QWidget" name="deadline_in" native="true">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>20</y>
+        <x>0</x>
+        <y>30</y>
         <width>195</width>
         <height>50</height>
        </rect>
@@ -1079,6 +1079,9 @@ font-weight:bold</string>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
       </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="plainText">
        <string>      描述怎么设计一个ui界面呢。。当然是让gq姐姐来设计了</string>
       </property>
@@ -1149,7 +1152,7 @@ height: 0px;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>272</width>
+         <width>263</width>
          <height>500</height>
         </rect>
        </property>
@@ -1162,7 +1165,7 @@ height: 0px;
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>251</width>
+          <width>263</width>
           <height>50</height>
          </rect>
         </property>
@@ -1339,7 +1342,7 @@ height: 0px;
        </property>
       </widget>
      </widget>
-     <widget class="QWidget" name="subtsak_new_2" native="true">
+     <widget class="QWidget" name="subtask_new_2" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
