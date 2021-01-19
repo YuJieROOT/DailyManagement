@@ -1,4 +1,5 @@
 #include "calendarPage.h"
+#include "database.h"
 
 #include <QApplication>
 #include <QFontDatabase>
@@ -20,6 +21,9 @@ int main(int argc, char *argv[])
     QFontDatabase::addApplicationFont(":/font/华文琥珀.ttf");
 
     calendarPage *w = new calendarPage;
+
+    dataBase *d = new dataBase;
+    qDebug() << d->connect("sa", "dq@Zcz5@KK2finh");
     w->show();
     return a.exec();
 }

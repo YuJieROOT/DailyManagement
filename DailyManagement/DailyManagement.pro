@@ -1,4 +1,5 @@
 QT       += core gui
+QT       += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,7 +27,8 @@ SOURCES += \
     searchPage.cpp \
     settingPage.cpp \
     todoPage.cpp \
-    userPage.cpp
+    userPage.cpp \
+    database.cpp
 
 HEADERS += \
     calendarPage.h \
@@ -36,7 +38,8 @@ HEADERS += \
     searchPage.h \
     settingPage.h \
     todoPage.h \
-    userPage.h
+    userPage.h \
+    database.h
 
 FORMS += \
     calendarPage.ui \
