@@ -52,7 +52,6 @@ todoPage::todoPage(QWidget *parent)
                     "width: 0px;"
                     "height: 0px;"
                 "}"
-
                 );
 }
 

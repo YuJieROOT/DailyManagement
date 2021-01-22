@@ -125,9 +125,9 @@ height: 0px;
         <widget class="QWidget" name="working_place_family" native="true">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>65</y>
-           <width>261</width>
+           <x>5</x>
+           <y>80</y>
+           <width>255</width>
            <height>70</height>
           </rect>
          </property>
@@ -138,9 +138,9 @@ border-radius:10px</string>
          <widget class="QWidget" name="working_place_family_in" native="true">
           <property name="geometry">
            <rect>
-            <x>0</x>
+            <x>5</x>
             <y>0</y>
-            <width>260</width>
+            <width>255</width>
             <height>65</height>
            </rect>
           </property>
@@ -202,9 +202,9 @@ border-radius:10px</string>
            <property name="geometry">
             <rect>
              <x>220</x>
-             <y>25</y>
-             <width>25</width>
-             <height>25</height>
+             <y>30</y>
+             <width>18</width>
+             <height>20</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -233,8 +233,8 @@ border-radius:10px</string>
            <rect>
             <x>10</x>
             <y>68</y>
-            <width>254</width>
-            <height>2</height>
+            <width>240</width>
+            <height>20</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -249,9 +249,9 @@ background-color: rgb(237, 238, 238);</string>
         <widget class="QWidget" name="working_place_work" native="true">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>185</y>
-           <width>261</width>
+           <x>5</x>
+           <y>205</y>
+           <width>255</width>
            <height>70</height>
           </rect>
          </property>
@@ -260,7 +260,7 @@ background-color: rgb(237, 238, 238);</string>
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>260</width>
+            <width>255</width>
             <height>65</height>
            </rect>
           </property>
@@ -324,7 +324,7 @@ background-color: rgb(237, 238, 238);</string>
              <x>220</x>
              <y>20</y>
              <width>30</width>
-             <height>30</height>
+             <height>25</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -353,8 +353,8 @@ background-color: rgb(237, 238, 238);</string>
            <rect>
             <x>10</x>
             <y>68</y>
-            <width>254</width>
-            <height>10</height>
+            <width>240</width>
+            <height>20</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -369,18 +369,18 @@ background-color: rgb(237, 238, 238);</string>
         <widget class="QWidget" name="inbox" native="true">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>261</width>
+           <x>5</x>
+           <y>5</y>
+           <width>255</width>
            <height>70</height>
           </rect>
          </property>
          <widget class="QWidget" name="inbox_in" native="true">
           <property name="geometry">
            <rect>
-            <x>0</x>
+            <x>5</x>
             <y>0</y>
-            <width>260</width>
+            <width>255</width>
             <height>65</height>
            </rect>
           </property>
@@ -444,7 +444,7 @@ background-color: rgb(237, 238, 238);</string>
              <x>220</x>
              <y>20</y>
              <width>30</width>
-             <height>30</height>
+             <height>25</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -490,7 +490,7 @@ background-color: rgb(237, 238, 238);</string>
          <property name="geometry">
           <rect>
            <x>40</x>
-           <y>135</y>
+           <y>150</y>
            <width>221</width>
            <height>50</height>
           </rect>
@@ -502,8 +502,8 @@ border-radius:10px</string>
          <widget class="QToolButton" name="todo_bar_pushbutton">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>17</y>
+            <x>20</x>
+            <y>15</y>
             <width>15</width>
             <height>20</height>
            </rect>
@@ -528,10 +528,10 @@ border-radius:10px</string>
          <widget class="QToolButton" name="todo_bar_pane_off">
           <property name="geometry">
            <rect>
-            <x>40</x>
-            <y>4</y>
-            <width>42</width>
-            <height>42</height>
+            <x>45</x>
+            <y>14</y>
+            <width>22</width>
+            <height>22</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -557,7 +557,7 @@ border-radius:10px</string>
          <widget class="QPlainTextEdit" name="todo_bar_plainTextEdit">
           <property name="geometry">
            <rect>
-            <x>90</x>
+            <x>80</x>
             <y>10</y>
             <width>510</width>
             <height>30</height>
@@ -579,7 +579,7 @@ font: 12pt &quot;Microsoft YaHei&quot;;</string>
            <rect>
             <x>80</x>
             <y>40</y>
-            <width>141</width>
+            <width>135</width>
             <height>3</height>
            </rect>
           </property>
@@ -617,9 +617,9 @@ background-color: rgb(237, 238, 238);</string>
         <property name="geometry">
          <rect>
           <x>5</x>
-          <y>7</y>
-          <width>35</width>
-          <height>35</height>
+          <y>8</y>
+          <width>33</width>
+          <height>33</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -787,9 +787,9 @@ height: 0px;
         <widget class="QWidget" name="common_events_bar" native="true">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>260</width>
+           <x>5</x>
+           <y>5</y>
+           <width>255</width>
            <height>50</height>
           </rect>
          </property>
@@ -801,7 +801,7 @@ border-radius:10px</string>
           <property name="geometry">
            <rect>
             <x>20</x>
-            <y>16</y>
+            <y>15</y>
             <width>15</width>
             <height>20</height>
            </rect>
@@ -826,10 +826,10 @@ border-radius:10px</string>
          <widget class="QToolButton" name="common_events_bar_pane_off">
           <property name="geometry">
            <rect>
-            <x>40</x>
-            <y>4</y>
-            <width>42</width>
-            <height>42</height>
+            <x>45</x>
+            <y>14</y>
+            <width>22</width>
+            <height>22</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -877,7 +877,7 @@ font: 12pt &quot;Microsoft YaHei&quot;;</string>
            <rect>
             <x>80</x>
             <y>40</y>
-            <width>180</width>
+            <width>170</width>
             <height>3</height>
            </rect>
           </property>
@@ -893,9 +893,9 @@ background-color: rgb(237, 238, 238);</string>
         <widget class="QWidget" name="common_events_bar_2" native="true">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>50</y>
-           <width>260</width>
+           <x>5</x>
+           <y>60</y>
+           <width>255</width>
            <height>50</height>
           </rect>
          </property>
@@ -954,7 +954,7 @@ font: 12pt &quot;Microsoft YaHei&quot;;</string>
            <rect>
             <x>80</x>
             <y>40</y>
-            <width>180</width>
+            <width>170</width>
             <height>3</height>
            </rect>
           </property>
@@ -970,9 +970,9 @@ background-color: rgb(237, 238, 238);</string>
         <widget class="QWidget" name="common_events_bar_3" native="true">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>100</y>
-           <width>260</width>
+           <x>5</x>
+           <y>115</y>
+           <width>255</width>
            <height>50</height>
           </rect>
          </property>
@@ -1009,10 +1009,10 @@ border-radius:10px</string>
          <widget class="QToolButton" name="common_events_bar_pane_off_3">
           <property name="geometry">
            <rect>
-            <x>40</x>
-            <y>4</y>
-            <width>42</width>
-            <height>42</height>
+            <x>45</x>
+            <y>14</y>
+            <width>22</width>
+            <height>22</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -1060,7 +1060,7 @@ font: 12pt &quot;Microsoft YaHei&quot;;</string>
            <rect>
             <x>80</x>
             <y>40</y>
-            <width>180</width>
+            <width>170</width>
             <height>3</height>
            </rect>
           </property>
@@ -1155,8 +1155,8 @@ font: 12px &quot;Microsoft YaHei&quot;;</string>
          <rect>
           <x>13</x>
           <y>13</y>
-          <width>25</width>
-          <height>25</height>
+          <width>22</width>
+          <height>22</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1385,14 +1385,14 @@ border-bottom-right-radius:8px;</string>
       <property name="font">
        <font>
         <family>Microsoft YaHei</family>
-        <pointsize>15</pointsize>
+        <pointsize>-1</pointsize>
         <weight>50</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 15pt &quot;Microsoft YaHei&quot;;
+       <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
 </string>
       </property>
       <property name="text">
@@ -1532,7 +1532,7 @@ height: 0px;
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-2</y>
+         <y>0</y>
          <width>628</width>
          <height>1125</height>
         </rect>
@@ -2045,7 +2045,7 @@ color:rgb(192,193,197)</string>
          <rect>
           <x>120</x>
           <y>67</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2062,7 +2062,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>22</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2079,7 +2079,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>112</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2096,7 +2096,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>157</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2113,7 +2113,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>202</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2130,7 +2130,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>247</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2147,7 +2147,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>292</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2164,7 +2164,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>337</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2181,7 +2181,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>382</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2198,7 +2198,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>427</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2215,7 +2215,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>472</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2232,7 +2232,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>517</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2249,7 +2249,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>562</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2266,7 +2266,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>607</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2283,7 +2283,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>652</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2300,7 +2300,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>697</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2317,7 +2317,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>742</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2334,7 +2334,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>787</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2351,7 +2351,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>832</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2368,7 +2368,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>877</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2385,7 +2385,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>922</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2402,7 +2402,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>967</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2419,7 +2419,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>1012</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2436,7 +2436,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>1057</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -2453,7 +2453,7 @@ background-color: rgb(237, 238, 238);</string>
          <rect>
           <x>120</x>
           <y>1102</y>
-          <width>508</width>
+          <width>500</width>
           <height>3</height>
          </rect>
         </property>
@@ -4177,15 +4177,21 @@ color:rgb(168, 168, 168)</string>
     <widget class="QWidget" name="new_workplace" native="true">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>0</x>
        <y>415</y>
-       <width>120</width>
+       <width>121</width>
        <height>35</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QToolButton" name="new_workplace_button">
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>...</string>
         </property>

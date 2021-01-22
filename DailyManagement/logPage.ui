@@ -490,7 +490,7 @@ height: 0px;
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(163, 163, 163);
-font: 15pt &quot;Microsoft YaHei&quot;;</string>
+font: 15px &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="text">
          <string>1月18号</string>
@@ -536,13 +536,14 @@ font: 15pt &quot;Microsoft YaHei&quot;;</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-radius:10px</string>
+        <string notr="true">border-radius:10px;
+background-color: rgba(138, 138, 138, 15);</string>
        </property>
        <widget class="QToolButton" name="log_bar_pushbutton_2">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>17</y>
+          <y>15</y>
           <width>15</width>
           <height>20</height>
          </rect>
@@ -568,9 +569,9 @@ font: 15pt &quot;Microsoft YaHei&quot;;</string>
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>4</y>
-          <width>42</width>
-          <height>42</height>
+          <y>14</y>
+          <width>22</width>
+          <height>22</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -581,7 +582,7 @@ font: 15pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="icon">
          <iconset resource="rsc.qrc">
-          <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+          <normaloff>:/icon/pane_on.png</normaloff>:/icon/pane_on.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -618,7 +619,7 @@ font: 12pt &quot;Microsoft YaHei&quot;;</string>
          <rect>
           <x>80</x>
           <y>40</y>
-          <width>755</width>
+          <width>745</width>
           <height>3</height>
          </rect>
         </property>
@@ -633,9 +634,9 @@ background-color: rgb(237, 238, 238);</string>
        <widget class="QLabel" name="log_bar_date_2">
         <property name="geometry">
          <rect>
-          <x>775</x>
-          <y>17</y>
-          <width>50</width>
+          <x>765</x>
+          <y>15</y>
+          <width>70</width>
           <height>20</height>
          </rect>
         </property>
@@ -653,19 +654,20 @@ font: 10pt &quot;Microsoft YaHei&quot;;</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>85</y>
+         <y>90</y>
          <width>835</width>
          <height>50</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-radius:10px</string>
+        <string notr="true">border-radius:10px;
+background-color: rgba(138, 138, 138, 15);</string>
        </property>
        <widget class="QToolButton" name="log_bar_pushbutton_3">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>17</y>
+          <y>15</y>
           <width>15</width>
           <height>20</height>
          </rect>
@@ -691,9 +693,9 @@ font: 10pt &quot;Microsoft YaHei&quot;;</string>
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>4</y>
-          <width>42</width>
-          <height>42</height>
+          <y>14</y>
+          <width>22</width>
+          <height>22</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -704,7 +706,7 @@ font: 10pt &quot;Microsoft YaHei&quot;;</string>
         </property>
         <property name="icon">
          <iconset resource="rsc.qrc">
-          <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
+          <normaloff>:/icon/pane_on.png</normaloff>:/icon/pane_on.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -741,7 +743,7 @@ font: 12pt &quot;Microsoft YaHei&quot;;</string>
          <rect>
           <x>80</x>
           <y>40</y>
-          <width>755</width>
+          <width>745</width>
           <height>3</height>
          </rect>
         </property>
@@ -756,9 +758,9 @@ background-color: rgb(237, 238, 238);</string>
        <widget class="QLabel" name="log_bar_date_3">
         <property name="geometry">
          <rect>
-          <x>775</x>
-          <y>17</y>
-          <width>50</width>
+          <x>765</x>
+          <y>15</y>
+          <width>70</width>
           <height>20</height>
          </rect>
         </property>
@@ -805,10 +807,10 @@ font: 10pt &quot;Microsoft YaHei&quot;;</string>
       <widget class="QToolButton" name="deadline_pane_off">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>4</y>
-         <width>42</width>
-         <height>42</height>
+         <x>10</x>
+         <y>12</y>
+         <width>25</width>
+         <height>25</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -946,17 +948,17 @@ font-weight:bold</string>
      <widget class="QPlainTextEdit" name="detial">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>5</x>
         <y>50</y>
         <width>261</width>
-        <height>131</height>
+        <height>501</height>
        </rect>
       </property>
       <property name="focusPolicy">
        <enum>Qt::ClickFocus</enum>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 15px &quot;Microsoft YaHei&quot;;
+       <string notr="true">font: 16px &quot;Microsoft YaHei&quot;;
 </string>
       </property>
       <property name="frameShape">
@@ -972,9 +974,9 @@ font-weight:bold</string>
      <widget class="QWidget" name="subtask_new" native="true">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>140</x>
         <y>550</y>
-        <width>151</width>
+        <width>131</width>
         <height>45</height>
        </rect>
       </property>
@@ -983,14 +985,14 @@ font-weight:bold</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>131</width>
+         <width>111</width>
          <height>20</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">color: rgb(163, 163, 163);
 background-color: rgba(255, 255, 255, 0);
-font: 13pt &quot;Microsoft YaHei&quot;;</string>
+font: 13px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="text">
         <string>完成时间:1月18号</string>
