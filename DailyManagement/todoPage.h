@@ -10,6 +10,7 @@
 #include "searchPage.h"
 #include "settingPage.h"
 #include "userPage.h"
+#include "database.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class todoPage; }
@@ -22,6 +23,8 @@ class todoPage : public QMainWindow
 public:
     todoPage(QWidget *parent = nullptr);
     ~todoPage();
+
+    void getDB(dataBase *db){database = db;}
 
 private slots:
     void on_user_button_clicked();
@@ -38,8 +41,11 @@ private slots:
 
     void on_setting_button_clicked();
 
+    void on_new_workplace_button_clicked();
+
+    void clickMyWidget();
+
 private:
-    Ui::todoPage *ui;
-    QWidget *user_page, *todo_page, *calendar_page, *count_down_page, *dustbin_page, *search_page, *log_page, *setting_page;
+    Ui::todoPage *ui;dataBase *database;
 };
 #endif // todoPage_H

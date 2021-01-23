@@ -10,6 +10,7 @@
 #include "settingPage.h"
 #include "todoPage.h"
 #include "userPage.h"
+#include "database.h"
 
 namespace Ui {
 class calendarPage;
@@ -22,6 +23,8 @@ class calendarPage : public QMainWindow
 public:
     explicit calendarPage(QWidget *parent = nullptr);
     ~calendarPage();
+
+    void getDB(dataBase *db){database = db;}
 
 private slots:
     void on_todo_button_clicked();
@@ -40,6 +43,7 @@ private slots:
 
 private:
     Ui::calendarPage *ui;
+    dataBase *database;
 };
 
 #endif // CALENDARPAGE_H

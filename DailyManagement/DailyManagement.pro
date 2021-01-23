@@ -19,6 +19,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    ClickWidget.cpp \
+    MyLabelEdit.cpp \
     calendarPage.cpp \
     countdownPage.cpp \
     dustbinPage.cpp \
@@ -27,17 +29,22 @@ SOURCES += \
     searchPage.cpp \
     settingPage.cpp \
     todoPage.cpp \
+    ui_logic.cpp \
     userPage.cpp \
     database.cpp
 
 HEADERS += \
+    ClickWidget.h \
+    MyLabelEdit.h \
     calendarPage.h \
     countdownPage.h \
     dustbinPage.h \
     logPage.h \
+    myDebug.h \
     searchPage.h \
     settingPage.h \
     todoPage.h \
+    ui_logic.h \
     userPage.h \
     database.h
 

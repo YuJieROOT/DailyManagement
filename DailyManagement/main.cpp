@@ -7,7 +7,7 @@
 #include <QFile>
 #include <QDebug>
 
-bool onLoadFont(QString strPath);
+//bool onLoadFont(QString strPath);
 
 int main(int argc, char *argv[])
 {
@@ -15,19 +15,21 @@ int main(int argc, char *argv[])
 
     //QString fontpath = ":/font/微软雅黑.ttf";
     //qDebug() << onLoadFont(fontpath);
-
+    //加载字体
     QFontDatabase::addApplicationFont(":/font/微软雅黑.ttf");
     QFontDatabase::addApplicationFont(":/font/SimSun.ttf");
     QFontDatabase::addApplicationFont(":/font/华文琥珀.ttf");
-
-    calendarPage *w = new calendarPage;
-
+    //连接数据库
     dataBase *d = new dataBase;
     qDebug() << d->connect("sa", "dq@Zcz5@KK2finh");
+    //打开主界面 日历界面
+    calendarPage *w = new calendarPage;
+    w->getDB(d);
     w->show();
+
     return a.exec();
 }
-
+/*
 bool onLoadFont(QString strPath)
 {
     QFile dFontFile(strPath);
@@ -58,4 +60,4 @@ bool onLoadFont(QString strPath)
     qApp->setFont(font);
     return true;
 }
-
+*/
