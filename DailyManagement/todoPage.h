@@ -43,7 +43,7 @@ private slots:
 
     void on_new_workplace_button_clicked();
 
-    void clickMyWidget();
+//    void clickMyWidget();
 
 private:
     Ui::todoPage *ui;dataBase *database;

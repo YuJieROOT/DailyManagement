@@ -418,51 +418,61 @@ background-color: rgb(237, 238, 238);</string>
        <height>35</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QToolButton" name="new_workplace_button">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-        </property>
-        <property name="text">
-         <string>...</string>
-        </property>
-        <property name="icon">
-         <iconset resource="rsc.qrc">
-          <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-        <property name="autoRaise">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="new_workplace_text">
-        <property name="font">
-         <font>
-          <family>Microsoft YaHei</family>
-          <pointsize>8</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 8pt &quot;Microsoft YaHei&quot;;
+     <widget class="QToolButton" name="new_workplace_button">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>11</y>
+        <width>27</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="rsc.qrc">
+        <normaloff>:/icon/add.png</normaloff>:/icon/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="new_workplace_text">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>11</y>
+        <width>64</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;Microsoft YaHei&quot;;
 color: rgb(163, 163, 163);</string>
-        </property>
-        <property name="text">
-         <string>新建工作区</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+      </property>
+      <property name="text">
+       <string>新建工作区</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QScrollArea" name="inbox_scrollArea">
      <property name="geometry">
@@ -470,7 +480,7 @@ color: rgb(163, 163, 163);</string>
        <x>0</x>
        <y>70</y>
        <width>225</width>
-       <height>570</height>
+       <height>571</height>
       </rect>
      </property>
      <property name="autoFillBackground">
@@ -531,13 +541,13 @@ height: 0px;
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>-2</y>
         <width>214</width>
         <height>800</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
       </property>
       <widget class="QWidget" name="working_place_family" native="true">
        <property name="geometry">
@@ -557,7 +567,7 @@ border-radius:10px</string>
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>225</width>
+          <width>205</width>
           <height>65</height>
          </rect>
         </property>
@@ -652,126 +662,6 @@ border-radius:10px</string>
           <y>68</y>
           <width>205</width>
           <height>2</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(237, 238, 238);
-background-color: rgb(237, 238, 238);</string>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="working_place_work" native="true">
-       <property name="geometry">
-        <rect>
-         <x>5</x>
-         <y>80</y>
-         <width>205</width>
-         <height>70</height>
-        </rect>
-       </property>
-       <widget class="QWidget" name="working_place_work_in" native="true">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>225</width>
-          <height>65</height>
-         </rect>
-        </property>
-        <widget class="QToolButton" name="working_place_work_icon">
-         <property name="geometry">
-          <rect>
-           <x>15</x>
-           <y>16</y>
-           <width>30</width>
-           <height>30</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-         </property>
-         <property name="text">
-          <string>...</string>
-         </property>
-         <property name="icon">
-          <iconset resource="rsc.qrc">
-           <normaloff>:/icon/working_table.png</normaloff>:/icon/working_table.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="autoRaise">
-          <bool>true</bool>
-         </property>
-        </widget>
-        <widget class="QLabel" name="working_place_work_text">
-         <property name="geometry">
-          <rect>
-           <x>65</x>
-           <y>16</y>
-           <width>50</width>
-           <height>30</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <family>Microsoft YaHei</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;</string>
-         </property>
-         <property name="text">
-          <string>工作</string>
-         </property>
-        </widget>
-        <widget class="QToolButton" name="working_place_work_rightarrow">
-         <property name="geometry">
-          <rect>
-           <x>180</x>
-           <y>17</y>
-           <width>30</width>
-           <height>30</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-         </property>
-         <property name="text">
-          <string>...</string>
-         </property>
-         <property name="icon">
-          <iconset resource="rsc.qrc">
-           <normaloff>:/icon/right_arrow.png</normaloff>:/icon/right_arrow.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="autoRaise">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </widget>
-       <widget class="Line" name="working_place_work_line">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>68</y>
-          <width>205</width>
-          <height>20</height>
          </rect>
         </property>
         <property name="styleSheet">
