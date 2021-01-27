@@ -11,6 +11,7 @@
 #include "settingPage.h"
 #include "userPage.h"
 #include "database.h"
+#include "ClickWidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class todoPage; }
@@ -43,7 +44,7 @@ private slots:
 
     void on_new_workplace_button_clicked();
 
-//    void clickMyWidget();
+    void clickMyWidget(ClickWidget *);
 
 private:
     Ui::todoPage *ui;dataBase *database;
