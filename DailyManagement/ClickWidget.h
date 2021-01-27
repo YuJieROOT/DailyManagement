@@ -13,7 +13,7 @@ public:
     {
         //this->setStyleSheet("background: #32CC99;");
         setAttribute(Qt::WA_StyledBackground);
-    };
+    }
     QString getText();
     void setText(QString);
     //void initWidget();

@@ -40,5 +40,6 @@
         <file>font/微软雅黑.ttf</file>
         <file>font/SimSun.ttf</file>
         <file>font/华文琥珀.ttf</file>
+        <file>icon/inital.png</file>
     </qresource>
 </RCC>

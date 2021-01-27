@@ -10,6 +10,7 @@
 #include "settingPage.h"
 #include "todoPage.h"
 #include "userPage.h"
+#include "ClickWidget.h"
 
 namespace Ui {
 class countDownPage;
@@ -38,6 +39,8 @@ private slots:
     void on_log_button_clicked();
 
     void on_setting_button_clicked();
+
+    void clickMyWidget(ClickWidget *);
 
 private:
     Ui::countDownPage *ui;

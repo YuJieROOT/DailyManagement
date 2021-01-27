@@ -1,14 +1,7 @@
 #include "ClickWidget.h"
 //#include "myDebug.h"
 #include <QDebug>
-/*
-ClickWidget::ClickWidget(QWidget *parent):
-    QWidget(parent)
-{
-    //this->setStyleSheet("background: #32CC99;");
-    setAttribute(Qt::WA_StyledBackground);
-}
-*/
+
 void ClickWidget::mouseReleaseEvent(QMouseEvent *)
 {
    emit clicked(this);

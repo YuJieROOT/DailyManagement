@@ -155,7 +155,6 @@ void todoPage::on_dustbin_button_clicked()
     delete this;
 }
 
-
 void todoPage::on_search_button_clicked()
 {
     searchPage *w = new searchPage;
