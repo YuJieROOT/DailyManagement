@@ -22,10 +22,11 @@ countDownPage::countDownPage(QWidget *parent) :
                ui->countdown_scrollAreaWidgetContents->setFixedHeight(0);
                QSqlQuery query;  //新建一个查询的实例
 
-               if (query.exec("select * from 待办事项 where 目标时间 is not null "))  //列出表的所有记录    //本次查询成功
+               if (query.exec("select * from 待办事项 where 目标时间 is not null && 完成时间 is null && 删除时间 is null"))  //列出表的所有记录    //本次查询成功
                {
                    QString countdown_title;
                    QString countdown_describe;
+                   int countdown_num;
 
                    while(query.next())
                    {
@@ -33,8 +34,7 @@ countDownPage::countDownPage(QWidget *parent) :
                        ui->countdown_scrollAreaWidgetContents->setFixedHeight(h + 105);  //每增加一个工作区scroll的高度增加105
                        countdown_title = query.value("待办事项名").toString();
                        countdown_describe = query.value("详细内容").toString();
-
-                       qDebug()<<countdown_title;
+                       countdown_num = query.value("编号").toInt();
 
                        //新增一个countdown_bar
                        ClickWidget *countdown_bar=new ClickWidget(ui->countdown_scrollAreaWidgetContents);
@@ -44,6 +44,7 @@ countDownPage::countDownPage(QWidget *parent) :
                                                     "border-radius:10px;"
                                                     "}"
                                    );
+                       countdown_bar->setNum(countdown_num);  //记录事件编号
 
                        //countdown_bar内添加push_button
                        QToolButton *push_button = new QToolButton(countdown_bar);
@@ -58,6 +59,7 @@ countDownPage::countDownPage(QWidget *parent) :
 
                        //countdown_bar内添加pane_off
                        QToolButton *pane_off = new QToolButton(countdown_bar);
+                       pane_off->setProperty("objectName","pane_off");
                        pane_off->setIcon(QIcon(":/icon/pane_off.png"));
                        pane_off->setAutoRaise(true);
                        pane_off->setIconSize(QSize(25,25));
@@ -96,6 +98,7 @@ countDownPage::countDownPage(QWidget *parent) :
                        QDate D1 = QDate::currentDate();
                        QDate D2 = query.value("目标时间").toDate();
                        QLineEdit *countdown = new QLineEdit(countdown_bar);
+                       countdown->setProperty("objectName","countdown");
                        countdown->setFocusPolicy(Qt::NoFocus);
                        countdown->setFrame(false);
                        if(!D2.isNull())
@@ -124,7 +127,9 @@ countDownPage::countDownPage(QWidget *parent) :
                                    );
                        line->raise();
 
-                       connect(countdown_bar, SIGNAL(clicked(ClickWidget *)), this, SLOT(clickMyWidget(ClickWidget *)));
+                       connect(countdown_bar, SIGNAL(clicked(ClickWidget *)), this, SLOT(clickMyWidget(ClickWidget *)));  //点击切换，开启详情页
+
+                       connect(pane_off, &QToolButton::clicked, countdown_bar, &ClickWidget::accomplish);  //点击pane_off，完成该任务
 
                    }
 
@@ -139,10 +144,13 @@ countDownPage::countDownPage(QWidget *parent) :
     //第三栏初始化
     {
         QLabel *inital_pix = new QLabel(ui->left3);
+        inital_pix->setProperty("objectName","inital_pix");
         inital_pix->setPixmap(QPixmap(":/icon/inital.png"));
         inital_pix->setScaledContents(true);
         inital_pix->setGeometry(0,0,274,675);
     }
+
+
 }
 
 countDownPage::~countDownPage()
@@ -197,7 +205,6 @@ void countDownPage::on_log_button_clicked()
     this->close();
     delete this;
 }
-
 void countDownPage::on_setting_button_clicked()
 {
     settingPage *w = new settingPage;
@@ -206,8 +213,15 @@ void countDownPage::on_setting_button_clicked()
     delete this;
 }
 
+//点击countdown_bar发生的事件
 void countDownPage::clickMyWidget(ClickWidget *w)
 {
+    //删除第三栏所有deadline_pane_off
+    QList<QToolButton*> deadline_pane_off_old = w->parent()->parent()->parent()->parent()->parent()->findChildren<QToolButton *>("deadline_pane_off");
+    qDebug()<<w->parent()->parent()->parent()->parent()->parent()->findChildren<QToolButton *>("deadline_pane_off");
+    foreach (QToolButton* btn, deadline_pane_off_old) {   delete btn;  }
+
+
     //第二栏选中分组改变颜色
     QList<ClickWidget*> clickw_countdown_bar = ui->countdown_scrollAreaWidgetContents->findChildren<ClickWidget*>();
     foreach (ClickWidget* clickw_countdown_bar, clickw_countdown_bar)
@@ -227,24 +241,37 @@ void countDownPage::clickMyWidget(ClickWidget *w)
     //第三栏显示
 
     //初始化页面消失
-    QList<QLabel*> list = ui->left3->findChildren<QLabel*>();
-    for(int i=0;i<list.count();i++)
+    QLabel *pix = ui->left3->findChild<QLabel*>("inital_pix");
+    if(pix!=NULL)
     {
-        QLabel *label = list.at(i);
-        if(label->objectName()=="")
-            delete label;
+        delete pix;
     }
 
-
+    //deadline_pane_off显示
+    QToolButton *deadline_pane_off = new QToolButton(ui->deadline_in);
+    deadline_pane_off->setProperty("objectName","deadline_pane_off");
+    deadline_pane_off->setIcon(QIcon(":/icon/pane_off.png"));
+    deadline_pane_off->setAutoRaise(true);
+    deadline_pane_off->setIconSize(QSize(25,25));
+    deadline_pane_off->setGeometry(10,12,25,25);
+    deadline_pane_off->setStyleSheet("QToolButton{"
+                                        "background:transparent;"
+                                     "}"
+                );
+    deadline_pane_off->show();
+    connect(deadline_pane_off, &QToolButton::clicked, w, &ClickWidget::accomplish);
+    connect(deadline_pane_off,&QToolButton::clicked,deadline_pane_off,[=](){
+        deadline_pane_off->setIcon(QIcon(":/icon/pane_on.png"));
+    });
+    qDebug()<<w->parent()->parent()->parent()->parent()->parent()->findChildren<QToolButton *>("deadline_pane_off");
 
     //deadline显示
-    QList<QLineEdit *> t = w->findChildren<QLineEdit*>();
-    QString countdown = t.at(1)->text();
+    QLineEdit * t = w->findChild<QLineEdit*>("countdown");
+    QString countdown = t->text();
     QDate D1 = QDate::currentDate();
-    qDebug()<<D1.toString();
     double val = countdown.toDouble();
     D1 = D1.addDays(val);
-    QString deadline = D1.toString();
+    QString deadline = D1.toString(QStringLiteral("yyyy年MM月dd日"));
     ui->deadline_date->setText(deadline);
 
     //显示待办栏标题
@@ -254,4 +281,21 @@ void countDownPage::clickMyWidget(ClickWidget *w)
     //显示待办栏详情
     QString describe_detial = w->findChild<QPlainTextEdit*>()->toPlainText();
     ui->detial->setPlainText(describe_detial);
+
+    //delete显示
+    QToolButton *delete_icon = new QToolButton(ui->describe);
+    delete_icon->setProperty("objectName","delete_icon");
+    delete_icon->setIcon(QIcon(":/icon/delete.png"));
+    delete_icon->setAutoRaise(true);
+    delete_icon->setIconSize(QSize(35,35));
+    delete_icon->setGeometry(230,550,35,35);
+    delete_icon->setStyleSheet("QToolButton{"
+                                        "background:transparent;"
+                                     "}"
+                );
+    delete_icon->show();
+
+
 }
+
+

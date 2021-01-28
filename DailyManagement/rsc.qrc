@@ -41,5 +41,6 @@
         <file>font/SimSun.ttf</file>
         <file>font/华文琥珀.ttf</file>
         <file>icon/inital.png</file>
+        <file>icon/delete.png</file>
     </qresource>
 </RCC>

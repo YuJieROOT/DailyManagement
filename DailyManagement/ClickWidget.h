@@ -14,8 +14,12 @@ public:
         //this->setStyleSheet("background: #32CC99;");
         setAttribute(Qt::WA_StyledBackground);
     }
+
     QString getText();
+    int getnum();
     void setText(QString);
+    void setNum(int);
+    void accomplish();
     //void initWidget();
 
 signals:
@@ -26,6 +30,7 @@ protected:
     virtual void mouseDoubleClickEvent(QMouseEvent*);
 private:
     QString text;
+    int num;
 };
 
 #endif // CLICKWIDGET_H

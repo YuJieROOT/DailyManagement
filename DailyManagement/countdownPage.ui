@@ -312,35 +312,6 @@ background-color: rgb(255, 255, 255);
         <height>50</height>
        </rect>
       </property>
-      <widget class="QToolButton" name="deadline_pane_off">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>12</y>
-         <width>25</width>
-         <height>25</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-       </property>
-       <property name="text">
-        <string>...</string>
-       </property>
-       <property name="icon">
-        <iconset resource="rsc.qrc">
-         <normaloff>:/icon/pane_off.png</normaloff>:/icon/pane_off.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>42</width>
-         <height>42</height>
-        </size>
-       </property>
-       <property name="autoRaise">
-        <bool>true</bool>
-       </property>
-      </widget>
       <widget class="Line" name="deadline_line">
        <property name="geometry">
         <rect>
@@ -395,6 +366,10 @@ background-color: rgb(163, 163, 163);</string>
          <width>151</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(163, 163, 163);
+font: 15px &quot;Microsoft YaHei&quot;;</string>
        </property>
        <property name="frame">
         <bool>false</bool>
