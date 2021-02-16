@@ -44,9 +44,20 @@ private slots:
 
     void on_new_workplace_button_clicked();
 
-    void clickMyWidget(ClickWidget *);
+    void clickWorkingPlace(ClickWidget *);
+
+    void clickTodoBar(ClickWidget *);
+
+    //void newTodoBar();
+
+    void on_new_todo_lineEdit_editingFinished();
+
+    void on_new_todo_lineEdit_textChanged(const QString &arg1);
+
+    void on_subtask_lineEdit_2_editingFinished();
 
 private:
     Ui::todoPage *ui;dataBase *database;
+    int findLatestNum(QString, QString, QString, QString = "");
 };
 #endif // todoPage_H

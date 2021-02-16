@@ -1,4 +1,8 @@
 #include "ui_logic.h"
+#include <QLabel>
+#include <QVariant>
+#include <QDebug>
+#include <QToolButton>
 
 void initUI(QWidget *w)
 {
@@ -50,5 +54,19 @@ void initUI(QWidget *w)
                 );
 }
 
-
+void initDetailedBar(QWidget *w)
+{
+    QLabel *inital_pix = w->findChild<QLabel*>("inital_pix");
+    if(inital_pix==NULL)
+    {
+        //第四栏初始化
+        inital_pix = new QLabel(w);
+        inital_pix->setProperty("objectName","inital_pix");
+        inital_pix->setPixmap(QPixmap(":/icon/inital.png"));
+        inital_pix->setScaledContents(true);
+        inital_pix->setGeometry(0,0,274,675);
+        inital_pix->show();
+        qDebug()<<inital_pix;
+    }
+}
 
