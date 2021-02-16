@@ -20,6 +20,7 @@ public:
     void setText(QString);
     void setNum(int);
     void accomplish();
+    void delete_countdown();
     //void initWidget();
 
 signals:

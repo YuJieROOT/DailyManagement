@@ -16,6 +16,7 @@ countDownPage::countDownPage(QWidget *parent) :
     ui->setupUi(this);
     initUI(this);
 
+/*
     //第二栏读数据库显示
         {
 
@@ -140,7 +141,9 @@ countDownPage::countDownPage(QWidget *parent) :
                    //display.append("From mysql database: " + error.databaseText());
                }
         }
-    
+    */
+
+    initcountdown();
     //第三栏初始化
     {
         QLabel *inital_pix = new QLabel(ui->left3);
@@ -205,12 +208,143 @@ void countDownPage::on_log_button_clicked()
     this->close();
     delete this;
 }
+
 void countDownPage::on_setting_button_clicked()
 {
     settingPage *w = new settingPage;
     w->show();
     this->close();
     delete this;
+}
+
+//初始化countdown
+void countDownPage::initcountdown()
+{
+    //第二栏读数据库显示
+        {
+
+               ui->countdown_scrollAreaWidgetContents->setFixedHeight(0);
+               QSqlQuery query;  //新建一个查询的实例
+
+               if (query.exec("select * from 待办事项 where 目标时间 is not null && 完成时间 is null && 删除时间 is null"))  //列出表的所有记录    //本次查询成功
+               {
+                   QString countdown_title;
+                   QString countdown_describe;
+                   int countdown_num;
+
+                   while(query.next())
+                   {
+                       int h = ui->countdown_scrollAreaWidgetContents->height();
+                       ui->countdown_scrollAreaWidgetContents->setFixedHeight(h + 105);  //每增加一个工作区scroll的高度增加105
+                       countdown_title = query.value("待办事项名").toString();
+                       countdown_describe = query.value("详细内容").toString();
+                       countdown_num = query.value("编号").toInt();
+
+                       //新增一个countdown_bar
+                       ClickWidget *countdown_bar=new ClickWidget(ui->countdown_scrollAreaWidgetContents);
+                       countdown_bar->setMinimumSize(835,100);
+                       countdown_bar->setGeometry(10,h+5,835,100);
+                       countdown_bar->setStyleSheet("ClickWidget{"
+                                                    "border-radius:10px;"
+                                                    "}"
+                                   );
+                       countdown_bar->setNum(countdown_num);  //记录事件编号
+
+                       //countdown_bar内添加push_button
+                       QToolButton *push_button = new QToolButton(countdown_bar);
+                       push_button->setIcon(QIcon(":/icon/push_off.png"));
+                       push_button->setAutoRaise(true);
+                       push_button->setIconSize(QSize(20,20));
+                       push_button->setGeometry(30,20,20,20);
+                       push_button->setStyleSheet("QToolButton{"
+                                                "background:transparent;"
+                                           "}"
+                                   );
+
+                       //countdown_bar内添加pane_off
+                       QToolButton *pane_off = new QToolButton(countdown_bar);
+                       pane_off->setProperty("objectName","pane_off");
+                       pane_off->setIcon(QIcon(":/icon/pane_off.png"));
+                       pane_off->setAutoRaise(true);
+                       pane_off->setIconSize(QSize(25,25));
+                       pane_off->setGeometry(60,20,25,25);
+                       pane_off->setStyleSheet("QToolButton{"
+                                                "background:transparent;"
+                                           "}"
+                                   );
+
+                       //countdown_bar内添加title
+                       QLineEdit *title = new QLineEdit(countdown_bar);
+                       title->setFocusPolicy(Qt::NoFocus);
+                       title->setFrame(false);
+                       title->setText(countdown_title);
+                       title->setGeometry(100,15,610,30);
+                       title->setStyleSheet("QLineEdit{"
+                                                "background:transparent;"
+                                                "font: 20px 'Microsoft YaHei';"
+                                                "}"
+                                   );
+
+                       //countdown_bar内添加describe
+                       QPlainTextEdit *describe = new QPlainTextEdit(countdown_bar);
+                       describe->setFocusPolicy(Qt::NoFocus);
+                       describe->setFrameShape(QFrame::NoFrame);
+                       describe->setPlainText(countdown_describe);
+                       describe->setGeometry(100,45,320,45);
+                       describe->setStyleSheet("QPlainTextEdit{"
+                                                    "background:transparent;"
+                                                    "font: 13px 'Microsoft YaHei';"
+                                                    "color: rgb(112, 112, 112);"
+                                      "}"
+                                   );
+
+                       //countdown_bar内添加countdown
+                       QDate D1 = QDate::currentDate();
+                       QDate D2 = query.value("目标时间").toDate();
+                       QLineEdit *countdown = new QLineEdit(countdown_bar);
+                       countdown->setProperty("objectName","countdown");
+                       countdown->setFocusPolicy(Qt::NoFocus);
+                       countdown->setFrame(false);
+                       if(!D2.isNull())
+                       {
+                           int t = D1.daysTo(D2);
+                           QString time = QString("%1").arg(t);
+                           countdown->setText(time);
+                       }
+
+                       countdown->setGeometry(760,28,70,44);
+                       countdown->setStyleSheet("QLineEdit{"
+                                                    "background:transparent;"
+                                                    "color: rgb(255, 153, 0);"
+                                                    "font: 30px 'STHupo';"
+                                      "}"
+                                   );
+
+                       //countdown_bar添加底线
+                       QFrame *line = new QFrame(countdown_bar);
+                       line->setGeometry(QRect(100,95,720,3));
+                       line->setFrameShape(QFrame::HLine);
+                       line->setFrameShadow(QFrame::Sunken);
+                       line->setStyleSheet("QFrame{"
+                                                "border-top: 2px solid rgb(237, 238, 238);"
+                                           "}"
+                                   );
+                       line->raise();
+
+                       connect(countdown_bar, SIGNAL(clicked(ClickWidget *)), this, SLOT(clickMyWidget(ClickWidget *)));  //点击切换，开启详情页
+
+                       connect(pane_off, &QToolButton::clicked, countdown_bar, &ClickWidget::accomplish);  //点击pane_off，完成该任务
+
+                   }
+
+               }
+               else  //如果查询失败，用下面的方法得到具体数据库返回的原因
+               {
+                   QSqlError error = query.lastError();
+                   //display.append("From mysql database: " + error.databaseText());
+               }
+        }
+
 }
 
 //点击countdown_bar发生的事件

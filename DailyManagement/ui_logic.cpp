@@ -69,4 +69,3 @@ void initDetailedBar(QWidget *w)
         qDebug()<<inital_pix;
     }
 }
-

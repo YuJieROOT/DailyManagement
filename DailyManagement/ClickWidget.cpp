@@ -44,20 +44,56 @@ void ClickWidget::accomplish()
     QToolButton *button2 = this->parent()->parent()->parent()->parent()->parent()->findChild<QToolButton *>("deadline_pane_off");
     button2->setIcon(QIcon(":/icon/pane_on.png"));
 
-    //数据库中标记为已完成
+    //更改所属界面
+    QString page = "log";
+    QSqlQuery query;
+    query.prepare("update 待办事项 set 所属界面 = ? where 编号 = ?");
+    query.addBindValue(page);
+    query.addBindValue(this->num);
+//    query.exec();
+//    QSqlDatabase::database().commit();
+
+    //添加完成时间
     qDebug()<<this->num;
     QDate D;
     D = QDate::currentDate();
-    QSqlQuery query;
     query.prepare("update 待办事项 set 完成时间 = ? where 编号 = ?");
     query.addBindValue(D);
     query.addBindValue(this->num);
+
 //    query.exec();
 //    QSqlDatabase::database().commit();
     QTime dieTime = QTime::currentTime().addMSecs(900);
         while( QTime::currentTime() < dieTime )
             QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
-    delete this;
+    this->hide();
+}
+
+void ClickWidget::delete_countdown()
+{
+    //更改所属界面
+    QString page = "dustbin";
+    QSqlQuery query;
+    query.prepare("update 待办事项 set 所属界面 = ? where 编号 = ?");
+    query.addBindValue(page);
+    query.addBindValue(this->num);
+//    query.exec();
+//    QSqlDatabase::database().commit();
+
+    //添加删除时间
+    QDate D;
+    D = QDate::currentDate();
+    query.prepare("update 待办事项 set 删除时间 = ? where 编号 = ?");
+    query.addBindValue(D);
+    query.addBindValue(this->num);
+
+
+//    query.exec();
+//    QSqlDatabase::database().commit();
+    QTime dieTime = QTime::currentTime().addMSecs(500);
+        while( QTime::currentTime() < dieTime )
+            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+    this->hide();
 }
 
 /*
