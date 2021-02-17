@@ -23,7 +23,6 @@ class countDownPage : public QMainWindow
 public:
     explicit countDownPage(QWidget *parent = nullptr);
     ~countDownPage();
-    void initcountdown();
 
 private slots:
     void on_user_button_clicked();
@@ -41,6 +40,8 @@ private slots:
     void on_setting_button_clicked();
 
     void clickMyWidget(ClickWidget *);
+
+    void initCountdown();
 
 
 private:

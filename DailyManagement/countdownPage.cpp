@@ -143,7 +143,7 @@ countDownPage::countDownPage(QWidget *parent) :
         }
     */
 
-    initcountdown();
+    initCountdown();
     //第三栏初始化
     {
         QLabel *inital_pix = new QLabel(ui->left3);
@@ -218,8 +218,26 @@ void countDownPage::on_setting_button_clicked()
 }
 
 //初始化countdown
-void countDownPage::initcountdown()
+void countDownPage::initCountdown()
 {
+qDebug()<<"initCountdown";
+
+//删除所有ClickWidget
+QList<ClickWidget*> clickw = ui->countdown_scrollAreaWidgetContents->findChildren<ClickWidget*>();
+foreach (ClickWidget* clickw, clickw) {   delete clickw;  }
+//删除所有QToolButton
+QList<QToolButton*> btns = ui->countdown_scrollAreaWidgetContents->findChildren<QToolButton*>();
+foreach (QToolButton* btn, btns) {   delete btn;  }
+//删除所有QLineEdit
+QList<QLineEdit*> ledit = ui->countdown_scrollAreaWidgetContents->findChildren<QLineEdit*>();
+foreach (QLineEdit* ledit, ledit) {   delete ledit;  }
+//删除所有QPlainTextEdit
+QList<QPlainTextEdit*> ptedit = ui->countdown_scrollAreaWidgetContents->findChildren<QPlainTextEdit*>();
+foreach (QPlainTextEdit* ptedit, ptedit) {   delete ptedit;  }
+//删除所有QFrame
+QList<QFrame*> frame = ui->countdown_scrollAreaWidgetContents->findChildren<QFrame*>();
+foreach (QFrame* frame, frame) {   delete frame;  }
+
     //第二栏读数据库显示
         {
 
@@ -249,6 +267,7 @@ void countDownPage::initcountdown()
                                                     "}"
                                    );
                        countdown_bar->setNum(countdown_num);  //记录事件编号
+                       countdown_bar->show();
 
                        //countdown_bar内添加push_button
                        QToolButton *push_button = new QToolButton(countdown_bar);
@@ -260,6 +279,7 @@ void countDownPage::initcountdown()
                                                 "background:transparent;"
                                            "}"
                                    );
+                       push_button->show();
 
                        //countdown_bar内添加pane_off
                        QToolButton *pane_off = new QToolButton(countdown_bar);
@@ -272,6 +292,7 @@ void countDownPage::initcountdown()
                                                 "background:transparent;"
                                            "}"
                                    );
+                       pane_off->show();
 
                        //countdown_bar内添加title
                        QLineEdit *title = new QLineEdit(countdown_bar);
@@ -284,6 +305,7 @@ void countDownPage::initcountdown()
                                                 "font: 20px 'Microsoft YaHei';"
                                                 "}"
                                    );
+                       title->show();
 
                        //countdown_bar内添加describe
                        QPlainTextEdit *describe = new QPlainTextEdit(countdown_bar);
@@ -297,6 +319,7 @@ void countDownPage::initcountdown()
                                                     "color: rgb(112, 112, 112);"
                                       "}"
                                    );
+                       describe->show();
 
                        //countdown_bar内添加countdown
                        QDate D1 = QDate::currentDate();
@@ -319,6 +342,7 @@ void countDownPage::initcountdown()
                                                     "font: 30px 'STHupo';"
                                       "}"
                                    );
+                       countdown->show();
 
                        //countdown_bar添加底线
                        QFrame *line = new QFrame(countdown_bar);
@@ -330,10 +354,13 @@ void countDownPage::initcountdown()
                                            "}"
                                    );
                        line->raise();
+                       line->show();
 
                        connect(countdown_bar, SIGNAL(clicked(ClickWidget *)), this, SLOT(clickMyWidget(ClickWidget *)));  //点击切换，开启详情页
 
                        connect(pane_off, &QToolButton::clicked, countdown_bar, &ClickWidget::accomplish);  //点击pane_off，完成该任务
+
+                       connect(countdown_bar, SIGNAL(update_countdown()),this, SLOT(initCountdown()));
 
                    }
 
@@ -411,6 +438,12 @@ void countDownPage::clickMyWidget(ClickWidget *w)
     //显示待办栏标题
     QString describe_title = w->findChild<QLineEdit*>()->text();
     ui->title->setText(describe_title);
+
+    //更改待办标题
+    if(ui->title->hasFocus())
+    {
+
+    }
 
     //显示待办栏详情
     QString describe_detial = w->findChild<QPlainTextEdit*>()->toPlainText();

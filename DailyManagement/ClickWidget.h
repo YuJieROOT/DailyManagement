@@ -25,6 +25,7 @@ public:
 
 signals:
     void clicked(ClickWidget *);
+    void update_countdown();
 
 protected:
     virtual void mouseReleaseEvent(QMouseEvent *);

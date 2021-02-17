@@ -50,6 +50,7 @@ void ClickWidget::accomplish()
     query.prepare("update 待办事项 set 所属界面 = ? where 编号 = ?");
     query.addBindValue(page);
     query.addBindValue(this->num);
+
 //    query.exec();
 //    QSqlDatabase::database().commit();
 
@@ -63,10 +64,11 @@ void ClickWidget::accomplish()
 
 //    query.exec();
 //    QSqlDatabase::database().commit();
-    QTime dieTime = QTime::currentTime().addMSecs(900);
-        while( QTime::currentTime() < dieTime )
-            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
-    this->hide();
+
+    QTime dieTime = QTime::currentTime().addMSecs(800);
+    while( QTime::currentTime() < dieTime )
+        QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+    emit update_countdown();
 }
 
 void ClickWidget::delete_countdown()
@@ -77,6 +79,7 @@ void ClickWidget::delete_countdown()
     query.prepare("update 待办事项 set 所属界面 = ? where 编号 = ?");
     query.addBindValue(page);
     query.addBindValue(this->num);
+
 //    query.exec();
 //    QSqlDatabase::database().commit();
 
@@ -87,13 +90,14 @@ void ClickWidget::delete_countdown()
     query.addBindValue(D);
     query.addBindValue(this->num);
 
-
 //    query.exec();
 //    QSqlDatabase::database().commit();
-    QTime dieTime = QTime::currentTime().addMSecs(500);
-        while( QTime::currentTime() < dieTime )
-            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
-    this->hide();
+
+    QTime dieTime = QTime::currentTime().addMSecs(800);
+    while( QTime::currentTime() < dieTime )
+        QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+    emit update_countdown();
+
 }
 
 /*
